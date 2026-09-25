@@ -1,0 +1,181 @@
+[
+  {
+    "label": "Sinais vitais normais: 0",
+    "input": {
+      "fr": 16,
+      "spo2": 97,
+      "escala": "1",
+      "o2": "0",
+      "pas": 125,
+      "fc": 75,
+      "consc": "a",
+      "temp": 36.8
+    },
+    "expected": {
+      "score": 0,
+      "level": "low"
+    },
+    "originalInput": {
+      "fr": 16,
+      "spo2": 97,
+      "escala": "1",
+      "o2": "0",
+      "pas": 125,
+      "fc": 75,
+      "consc": "a",
+      "temp": 36.8
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Confusão nova isolada: 3 pontos em um parâmetro",
+    "input": {
+      "fr": 16,
+      "spo2": 97,
+      "escala": "1",
+      "o2": "0",
+      "pas": 125,
+      "fc": 75,
+      "consc": "cvpu",
+      "temp": 36.8
+    },
+    "expected": {
+      "score": 3,
+      "raw": {
+        "red": 1
+      },
+      "level": "mid",
+      "verdict": "baixo-médio"
+    },
+    "originalInput": {
+      "fr": 16,
+      "spo2": 97,
+      "escala": "1",
+      "o2": "0",
+      "pas": 125,
+      "fc": 75,
+      "consc": "cvpu",
+      "temp": 36.8
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "FR 22 (2), SpO₂ 95 (1), PAS 105 (1), FC 95 (1), T 38,3 (1): 6",
+    "input": {
+      "fr": 22,
+      "spo2": 95,
+      "escala": "1",
+      "o2": "0",
+      "pas": 105,
+      "fc": 95,
+      "consc": "a",
+      "temp": 38.3
+    },
+    "expected": {
+      "score": 6,
+      "level": "mid",
+      "verdict": "médio"
+    },
+    "originalInput": {
+      "fr": 22,
+      "spo2": 95,
+      "escala": "1",
+      "o2": "0",
+      "pas": 105,
+      "fc": 95,
+      "consc": "a",
+      "temp": 38.3
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Choque séptico com O₂: 3+3+2+3+2+3+2 = 18",
+    "input": {
+      "fr": 26,
+      "spo2": 91,
+      "escala": "1",
+      "o2": "1",
+      "pas": 88,
+      "fc": 120,
+      "consc": "cvpu",
+      "temp": 39.5
+    },
+    "expected": {
+      "score": 18,
+      "level": "high"
+    },
+    "originalInput": {
+      "fr": 26,
+      "spo2": 91,
+      "escala": "1",
+      "o2": "1",
+      "pas": 88,
+      "fc": 120,
+      "consc": "cvpu",
+      "temp": 39.5
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "DPOC, escala 2, SpO₂ 90% com O₂: só o oxigênio pontua (2)",
+    "input": {
+      "fr": 18,
+      "spo2": 90,
+      "escala": "2",
+      "o2": "1",
+      "pas": 130,
+      "fc": 80,
+      "consc": "a",
+      "temp": 37
+    },
+    "expected": {
+      "score": 2,
+      "raw": {
+        "sat": 0
+      },
+      "level": "low"
+    },
+    "originalInput": {
+      "fr": 18,
+      "spo2": 90,
+      "escala": "2",
+      "o2": "1",
+      "pas": 130,
+      "fc": 80,
+      "consc": "a",
+      "temp": 37
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Escala 2, SpO₂ 97% com O₂: 3 pontos na saturação",
+    "input": {
+      "fr": 18,
+      "spo2": 97,
+      "escala": "2",
+      "o2": "1",
+      "pas": 130,
+      "fc": 80,
+      "consc": "a",
+      "temp": 37
+    },
+    "expected": {
+      "score": 5,
+      "raw": {
+        "sat": 3
+      },
+      "level": "mid"
+    },
+    "originalInput": {
+      "fr": 18,
+      "spo2": 97,
+      "escala": "2",
+      "o2": "1",
+      "pas": 130,
+      "fc": 80,
+      "consc": "a",
+      "temp": 37
+    },
+    "expandedZeroOptions": []
+  }
+]
