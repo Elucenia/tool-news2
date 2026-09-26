@@ -1,9 +1,11 @@
-/* ELUCENIA standalone integration. Source package metadata and rights: README.md. */
+/* tool-news2 · Elucenia · https://github.com/Elucenia/tool-news2
+   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+   Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"news2","title":"NEWS2 (National Early Warning Score 2)","fields":[["fr","Frequência respiratória","num",{"min":3,"max":70,"unit":"irpm","ph":"16"}],["spo2","SpO₂","num",{"min":50,"max":100,"unit":"%","ph":"97"}],["escala","Escala de SpO₂","radio",{"opts":{"1":"Escala 1 (padrão)","2":"Escala 2 (hipercapnia, alvo 88–92%)"}}],["o2","Em uso de oxigênio?","radio",{"opts":{"0":"Ar ambiente","1":"Oxigênio suplementar"}}],["pas","Pressão sistólica","num",{"min":40,"max":300,"unit":"mmHg","ph":"120"}],["fc","Frequência cardíaca","num",{"min":20,"max":250,"unit":"bpm","ph":"80"}],["consc","Nível de consciência","radio",{"opts":{"a":"Alerta","cvpu":"Confusão nova, responde à voz, à dor ou não responde"}}],["temp","Temperatura","num",{"min":30,"max":44,"step":0.1,"unit":"°C","ph":"36,8"}]],"config":null,"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
