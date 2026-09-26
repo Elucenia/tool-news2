@@ -7,7 +7,7 @@ Identificador: `news2`. Pacote independente da plataforma Elucenia, para navegad
 - Revisão: **needs-review**. Conferidos uso adulto, cuidado com escala SpO₂ 2 e regras de reprodução. O RCP permite reproduzir NEWS2 sob condições de atribuição, integridade, cores e aviso específico para tradução. Revisar a adaptação portuguesa e contexto antes de declarar conformidade; não converter resultado em ordem assistencial.
 - Execução: **disponível para reprodução técnica da fórmula**.
 - Validação clínica independente: **não realizada**. Os testes abaixo verificam aritmética e transporte dos campos.
-- 6 casos de referência em `examples.json`, conferidos por `test.cjs`. Verificação aritmética independente da fórmula (reimplementação a partir da literatura, entradas aleatórias): **pendente**.
+- 6 casos de referência em `examples.json`, conferidos por `test.cjs`. Verificação aritmética independente da fórmula (reimplementação a partir da literatura, entradas aleatórias): **realizada em 2026-09-25**, 80 comparações conformes.
 - Dados: o exemplo funciona localmente, sem rede, armazenamento ou identificação de pacientes.
 
 ## Uso no Node.js
