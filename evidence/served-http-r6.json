@@ -1,0 +1,1431 @@
+{
+  "schema": "elucenia-native-tool-actual-r6-local-HTTP-subset-r5",
+  "id": "news2",
+  "sourceReceipt": {
+    "file": "reports/review-20261005-completion/deploy-lock/r6-all-calculators-http-results.json",
+    "bytes": 7105396,
+    "sha256": "c0b1e4dc320ce807e78c0444e629c1269b545b6e2ac87c265d896073d8c34ecb"
+  },
+  "servedBuildId": "jN-2wbRrarMjYPwdPnRHh",
+  "checker": {
+    "file": "reports/review-20261005-completion/deploy-lock/verify-r6-all-calculators-http.cjs",
+    "sha256": "92411a9e01fe36e1bf380c3336f2171bdb523a02ff09683da75927b12b33b3fa",
+    "bytes": 20735
+  },
+  "health": {
+    "url": "http://127.0.0.1:3067/api/health",
+    "startedAt": "2026-10-05T17:35:43.039Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json",
+      "retryAfter": null,
+      "cacheControl": "no-store",
+      "nosniff": "nosniff"
+    },
+    "body": {
+      "status": "ok",
+      "application": "ELUCENIA",
+      "framework": "Next.js",
+      "version": "1.0.0"
+    },
+    "responseSha256": "65f95645e7826371eb2d9d3f96e0fed52ea4b88c77203f0cf2511769e57cd108",
+    "bytes": 80,
+    "elapsedMs": 27.345699999999994
+  },
+  "identity": {
+    "url": "http://127.0.0.1:3067/_next/data/jN-2wbRrarMjYPwdPnRHh/en/tools.json",
+    "startedAt": "2026-10-05T17:35:43.068Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json; charset=utf-8",
+      "retryAfter": null,
+      "cacheControl": "s-maxage=31536000",
+      "nosniff": "nosniff"
+    },
+    "responseSha256": "404601e2c283a588a2f41af4feb5113d1993f76cc22f73a7b8ef4f5d17a82fa8",
+    "bytes": 103853,
+    "elapsedMs": 14.542600000000007,
+    "semanticMatchWithCompiledCatalog": true
+  },
+  "sourceCalculator": {
+    "file": "deliveries/elucenia-next-hostinger-r6/private/tool-code/news2/calculator.js",
+    "sha256": "cd9bd3a519b45e17640257c5867c9f7cec02aee37f5eab1ddb6ab7c25f08b1a0",
+    "bytes": 6323
+  },
+  "sourceCalculatorMatchesCurrentCandidate": true,
+  "toolStatus": {
+    "cases": 6,
+    "replayed": 6,
+    "passed": 6,
+    "failed": 0,
+    "status": "passed"
+  },
+  "cases": [
+    {
+      "id": "news2",
+      "kind": "native-source-reference",
+      "index": 0,
+      "name": "Sinais vitais normais: 0",
+      "originalInput": {
+        "fr": 16,
+        "spo2": 97,
+        "escala": "1",
+        "o2": "0",
+        "pas": 125,
+        "fc": 75,
+        "consc": "a",
+        "temp": 36.8
+      },
+      "input": {
+        "fr": 16,
+        "spo2": 97,
+        "escala": "1",
+        "o2": "0",
+        "pas": 125,
+        "fc": 75,
+        "consc": "a",
+        "temp": 36.8
+      },
+      "amendments": [],
+      "expected": {
+        "score": 0,
+        "level": "low"
+      },
+      "recordedResult": {
+        "main": [
+          "0",
+          "pontos"
+        ],
+        "label": "NEWS2",
+        "raw": {
+          "score": 0,
+          "red": 0,
+          "sat": 0
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/news2/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "fr": 16,
+            "spo2": 97,
+            "escala": "1",
+            "o2": "0",
+            "pas": 125,
+            "fc": 75,
+            "consc": "a",
+            "temp": 36.8
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/news2/calculate",
+          "startedAt": "2026-10-05T17:39:14.391Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "news2",
+              "main": [
+                "0",
+                "pontos"
+              ],
+              "label": "NEWS2",
+              "raw": {
+                "score": 0,
+                "red": 0,
+                "sat": 0
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "6666ecf575293d3b811d3f5c04b5d4e1749eb6ba6c1e9f5e1b8277c8c7c10751",
+          "bytes": 134,
+          "elapsedMs": 4.920299999997951
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/news2/calculate",
+        "startedAt": "2026-10-05T17:39:14.391Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "news2",
+            "main": [
+              "0",
+              "pontos"
+            ],
+            "label": "NEWS2",
+            "raw": {
+              "score": 0,
+              "red": 0,
+              "sat": 0
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "6666ecf575293d3b811d3f5c04b5d4e1749eb6ba6c1e9f5e1b8277c8c7c10751",
+        "bytes": 134,
+        "elapsedMs": 4.920299999997951
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.score",
+            "expected": 0,
+            "obtained": 0,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.score",
+            "expected": 0,
+            "obtained": 0,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.red",
+            "expected": 0,
+            "obtained": 0,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.sat",
+            "expected": 0,
+            "obtained": 0,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "0",
+            "obtained": "0",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "pontos",
+            "obtained": "pontos",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "news2",
+      "kind": "native-source-reference",
+      "index": 1,
+      "name": "Confusão nova isolada: 3 pontos em um parâmetro",
+      "originalInput": {
+        "fr": 16,
+        "spo2": 97,
+        "escala": "1",
+        "o2": "0",
+        "pas": 125,
+        "fc": 75,
+        "consc": "cvpu",
+        "temp": 36.8
+      },
+      "input": {
+        "fr": 16,
+        "spo2": 97,
+        "escala": "1",
+        "o2": "0",
+        "pas": 125,
+        "fc": 75,
+        "consc": "cvpu",
+        "temp": 36.8
+      },
+      "amendments": [],
+      "expected": {
+        "score": 3,
+        "raw": {
+          "red": 1
+        },
+        "level": "mid",
+        "verdict": "baixo-médio"
+      },
+      "recordedResult": {
+        "main": [
+          "3",
+          "pontos"
+        ],
+        "label": "NEWS2",
+        "raw": {
+          "score": 3,
+          "red": 1,
+          "sat": 0
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/news2/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "fr": 16,
+            "spo2": 97,
+            "escala": "1",
+            "o2": "0",
+            "pas": 125,
+            "fc": 75,
+            "consc": "cvpu",
+            "temp": 36.8
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/news2/calculate",
+          "startedAt": "2026-10-05T17:39:14.703Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "news2",
+              "main": [
+                "3",
+                "pontos"
+              ],
+              "label": "NEWS2",
+              "raw": {
+                "score": 3,
+                "red": 1,
+                "sat": 0
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "167159b8d8fa178fbfd0fc9a55aa90ea26de87f2e6d105aa93806b975ca6eceb",
+          "bytes": 134,
+          "elapsedMs": 2.6706000000122003
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/news2/calculate",
+        "startedAt": "2026-10-05T17:39:14.703Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "news2",
+            "main": [
+              "3",
+              "pontos"
+            ],
+            "label": "NEWS2",
+            "raw": {
+              "score": 3,
+              "red": 1,
+              "sat": 0
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "167159b8d8fa178fbfd0fc9a55aa90ea26de87f2e6d105aa93806b975ca6eceb",
+        "bytes": 134,
+        "elapsedMs": 2.6706000000122003
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.red",
+            "expected": 1,
+            "obtained": 1,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.score",
+            "expected": 3,
+            "obtained": 3,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.score",
+            "expected": 3,
+            "obtained": 3,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.red",
+            "expected": 1,
+            "obtained": 1,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.sat",
+            "expected": 0,
+            "obtained": 0,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "3",
+            "obtained": "3",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "pontos",
+            "obtained": "pontos",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          },
+          {
+            "key": "verdict",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "news2",
+      "kind": "native-source-reference",
+      "index": 2,
+      "name": "FR 22 (2), SpO₂ 95 (1), PAS 105 (1), FC 95 (1), T 38,3 (1): 6",
+      "originalInput": {
+        "fr": 22,
+        "spo2": 95,
+        "escala": "1",
+        "o2": "0",
+        "pas": 105,
+        "fc": 95,
+        "consc": "a",
+        "temp": 38.3
+      },
+      "input": {
+        "fr": 22,
+        "spo2": 95,
+        "escala": "1",
+        "o2": "0",
+        "pas": 105,
+        "fc": 95,
+        "consc": "a",
+        "temp": 38.3
+      },
+      "amendments": [],
+      "expected": {
+        "score": 6,
+        "level": "mid",
+        "verdict": "médio"
+      },
+      "recordedResult": {
+        "main": [
+          "6",
+          "pontos"
+        ],
+        "label": "NEWS2",
+        "raw": {
+          "score": 6,
+          "red": 0,
+          "sat": 1
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/news2/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "fr": 22,
+            "spo2": 95,
+            "escala": "1",
+            "o2": "0",
+            "pas": 105,
+            "fc": 95,
+            "consc": "a",
+            "temp": 38.3
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/news2/calculate",
+          "startedAt": "2026-10-05T17:39:15.016Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "news2",
+              "main": [
+                "6",
+                "pontos"
+              ],
+              "label": "NEWS2",
+              "raw": {
+                "score": 6,
+                "red": 0,
+                "sat": 1
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "37ce0b02d5cb4e2a2f54bf299e83a4924db4dcf5624f3ff22c7105374519bff0",
+          "bytes": 134,
+          "elapsedMs": 2.2387000000162516
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/news2/calculate",
+        "startedAt": "2026-10-05T17:39:15.016Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "news2",
+            "main": [
+              "6",
+              "pontos"
+            ],
+            "label": "NEWS2",
+            "raw": {
+              "score": 6,
+              "red": 0,
+              "sat": 1
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "37ce0b02d5cb4e2a2f54bf299e83a4924db4dcf5624f3ff22c7105374519bff0",
+        "bytes": 134,
+        "elapsedMs": 2.2387000000162516
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.score",
+            "expected": 6,
+            "obtained": 6,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.score",
+            "expected": 6,
+            "obtained": 6,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.red",
+            "expected": 0,
+            "obtained": 0,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.sat",
+            "expected": 1,
+            "obtained": 1,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "6",
+            "obtained": "6",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "pontos",
+            "obtained": "pontos",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          },
+          {
+            "key": "verdict",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "news2",
+      "kind": "native-source-reference",
+      "index": 3,
+      "name": "Choque séptico com O₂: 3+3+2+3+2+3+2 = 18",
+      "originalInput": {
+        "fr": 26,
+        "spo2": 91,
+        "escala": "1",
+        "o2": "1",
+        "pas": 88,
+        "fc": 120,
+        "consc": "cvpu",
+        "temp": 39.5
+      },
+      "input": {
+        "fr": 26,
+        "spo2": 91,
+        "escala": "1",
+        "o2": "1",
+        "pas": 88,
+        "fc": 120,
+        "consc": "cvpu",
+        "temp": 39.5
+      },
+      "amendments": [],
+      "expected": {
+        "score": 18,
+        "level": "high"
+      },
+      "recordedResult": {
+        "main": [
+          "18",
+          "pontos"
+        ],
+        "label": "NEWS2",
+        "raw": {
+          "score": 18,
+          "red": 1,
+          "sat": 3
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/news2/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "fr": 26,
+            "spo2": 91,
+            "escala": "1",
+            "o2": "1",
+            "pas": 88,
+            "fc": 120,
+            "consc": "cvpu",
+            "temp": 39.5
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/news2/calculate",
+          "startedAt": "2026-10-05T17:39:15.327Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "news2",
+              "main": [
+                "18",
+                "pontos"
+              ],
+              "label": "NEWS2",
+              "raw": {
+                "score": 18,
+                "red": 1,
+                "sat": 3
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "880de4582f36d10dbdaca9efb8b34a2434095ed3315871f11ce987fd3764f7e5",
+          "bytes": 136,
+          "elapsedMs": 4.236899999988964
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/news2/calculate",
+        "startedAt": "2026-10-05T17:39:15.327Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "news2",
+            "main": [
+              "18",
+              "pontos"
+            ],
+            "label": "NEWS2",
+            "raw": {
+              "score": 18,
+              "red": 1,
+              "sat": 3
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "880de4582f36d10dbdaca9efb8b34a2434095ed3315871f11ce987fd3764f7e5",
+        "bytes": 136,
+        "elapsedMs": 4.236899999988964
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.score",
+            "expected": 18,
+            "obtained": 18,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.score",
+            "expected": 18,
+            "obtained": 18,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.red",
+            "expected": 1,
+            "obtained": 1,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.sat",
+            "expected": 3,
+            "obtained": 3,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "18",
+            "obtained": "18",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "pontos",
+            "obtained": "pontos",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "news2",
+      "kind": "native-source-reference",
+      "index": 4,
+      "name": "DPOC, escala 2, SpO₂ 90% com O₂: só o oxigênio pontua (2)",
+      "originalInput": {
+        "fr": 18,
+        "spo2": 90,
+        "escala": "2",
+        "o2": "1",
+        "pas": 130,
+        "fc": 80,
+        "consc": "a",
+        "temp": 37
+      },
+      "input": {
+        "fr": 18,
+        "spo2": 90,
+        "escala": "2",
+        "o2": "1",
+        "pas": 130,
+        "fc": 80,
+        "consc": "a",
+        "temp": 37
+      },
+      "amendments": [],
+      "expected": {
+        "score": 2,
+        "raw": {
+          "sat": 0
+        },
+        "level": "low"
+      },
+      "recordedResult": {
+        "main": [
+          "2",
+          "pontos"
+        ],
+        "label": "NEWS2",
+        "raw": {
+          "score": 2,
+          "red": 0,
+          "sat": 0
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/news2/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "fr": 18,
+            "spo2": 90,
+            "escala": "2",
+            "o2": "1",
+            "pas": 130,
+            "fc": 80,
+            "consc": "a",
+            "temp": 37
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/news2/calculate",
+          "startedAt": "2026-10-05T17:39:15.636Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "news2",
+              "main": [
+                "2",
+                "pontos"
+              ],
+              "label": "NEWS2",
+              "raw": {
+                "score": 2,
+                "red": 0,
+                "sat": 0
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "441217cffa0e0d70a8175e86c0173bddf6a2f247819eea72f6fb3a8bac220189",
+          "bytes": 134,
+          "elapsedMs": 3.3914999999979045
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/news2/calculate",
+        "startedAt": "2026-10-05T17:39:15.636Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "news2",
+            "main": [
+              "2",
+              "pontos"
+            ],
+            "label": "NEWS2",
+            "raw": {
+              "score": 2,
+              "red": 0,
+              "sat": 0
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "441217cffa0e0d70a8175e86c0173bddf6a2f247819eea72f6fb3a8bac220189",
+        "bytes": 134,
+        "elapsedMs": 3.3914999999979045
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.sat",
+            "expected": 0,
+            "obtained": 0,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.score",
+            "expected": 2,
+            "obtained": 2,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.score",
+            "expected": 2,
+            "obtained": 2,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.red",
+            "expected": 0,
+            "obtained": 0,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.sat",
+            "expected": 0,
+            "obtained": 0,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "2",
+            "obtained": "2",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "pontos",
+            "obtained": "pontos",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "news2",
+      "kind": "native-source-reference",
+      "index": 5,
+      "name": "Escala 2, SpO₂ 97% com O₂: 3 pontos na saturação",
+      "originalInput": {
+        "fr": 18,
+        "spo2": 97,
+        "escala": "2",
+        "o2": "1",
+        "pas": 130,
+        "fc": 80,
+        "consc": "a",
+        "temp": 37
+      },
+      "input": {
+        "fr": 18,
+        "spo2": 97,
+        "escala": "2",
+        "o2": "1",
+        "pas": 130,
+        "fc": 80,
+        "consc": "a",
+        "temp": 37
+      },
+      "amendments": [],
+      "expected": {
+        "score": 5,
+        "raw": {
+          "sat": 3
+        },
+        "level": "mid"
+      },
+      "recordedResult": {
+        "main": [
+          "5",
+          "pontos"
+        ],
+        "label": "NEWS2",
+        "raw": {
+          "score": 5,
+          "red": 1,
+          "sat": 3
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/news2/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "fr": 18,
+            "spo2": 97,
+            "escala": "2",
+            "o2": "1",
+            "pas": 130,
+            "fc": 80,
+            "consc": "a",
+            "temp": 37
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/news2/calculate",
+          "startedAt": "2026-10-05T17:39:15.948Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "news2",
+              "main": [
+                "5",
+                "pontos"
+              ],
+              "label": "NEWS2",
+              "raw": {
+                "score": 5,
+                "red": 1,
+                "sat": 3
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "0fb25ae1fea71808ee72b2f858d5bbf1a338f7f28432557f96d7b7ab10ee0ccd",
+          "bytes": 134,
+          "elapsedMs": 5.696200000005774
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/news2/calculate",
+        "startedAt": "2026-10-05T17:39:15.948Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "news2",
+            "main": [
+              "5",
+              "pontos"
+            ],
+            "label": "NEWS2",
+            "raw": {
+              "score": 5,
+              "red": 1,
+              "sat": 3
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "0fb25ae1fea71808ee72b2f858d5bbf1a338f7f28432557f96d7b7ab10ee0ccd",
+        "bytes": 134,
+        "elapsedMs": 5.696200000005774
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.sat",
+            "expected": 3,
+            "obtained": 3,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.score",
+            "expected": 5,
+            "obtained": 5,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.score",
+            "expected": 5,
+            "obtained": 5,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.red",
+            "expected": 1,
+            "obtained": 1,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.sat",
+            "expected": 3,
+            "obtained": 3,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "5",
+            "obtained": "5",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "pontos",
+            "obtained": "pontos",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    }
+  ],
+  "scope": {
+    "syntheticDataOnly": true,
+    "applicationModuleImports": 0,
+    "browserInteractions": 0,
+    "newIndependentOracles": 0,
+    "nativeSourceReferenceCases": 882,
+    "additionalDecimalCases": 4,
+    "predictProstateHasSeparateFullCurveOracleReplay": true,
+    "clinicalApproval": false,
+    "professionalLanguageApproval": false,
+    "populationValidation": false,
+    "hostingerDeploymentVerified": false,
+    "actualHTTPExecution": true,
+    "standaloneNodeServer": true,
+    "nodeVersion": "v22.18.0",
+    "noNewClinicalOrProfessionalApproval": true,
+    "pubmedResourceIsNotCalculatorAndNotIncludedIn222": true,
+    "description": "All 882 existing reference cases across the 218 native calculators plus four existing Decimal50 examples, executed via HTTP against the final local r6 standalone build. Raw precise source-audit comparisons are transport regressions, not independent clinical or full-method validation."
+  },
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false,
+  "newIndependentOracle": false,
+  "actualBrowserJourney": false,
+  "hostingerDeploymentVerified": false
+}
