@@ -1,0 +1,1092 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field fr",
+    "input": {
+      "spo2": 97,
+      "escala": "1",
+      "o2": "0",
+      "pas": 125,
+      "fc": 75,
+      "consc": "a",
+      "temp": 36.8
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "fr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field fr",
+    "input": {
+      "fr": "",
+      "spo2": 97,
+      "escala": "1",
+      "o2": "0",
+      "pas": 125,
+      "fc": 75,
+      "consc": "a",
+      "temp": 36.8
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "fr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" fr",
+    "input": {
+      "fr": "NaN",
+      "spo2": 97,
+      "escala": "1",
+      "o2": "0",
+      "pas": 125,
+      "fc": 75,
+      "consc": "a",
+      "temp": 36.8
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "fr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" fr",
+    "input": {
+      "fr": "Infinity",
+      "spo2": 97,
+      "escala": "1",
+      "o2": "0",
+      "pas": 125,
+      "fc": 75,
+      "consc": "a",
+      "temp": 36.8
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "fr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" fr",
+    "input": {
+      "fr": "1e309",
+      "spo2": 97,
+      "escala": "1",
+      "o2": "0",
+      "pas": 125,
+      "fc": 75,
+      "consc": "a",
+      "temp": 36.8
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "fr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" fr",
+    "input": {
+      "fr": "invalid",
+      "spo2": 97,
+      "escala": "1",
+      "o2": "0",
+      "pas": 125,
+      "fc": 75,
+      "consc": "a",
+      "temp": 36.8
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "fr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} fr",
+    "input": {
+      "fr": {},
+      "spo2": 97,
+      "escala": "1",
+      "o2": "0",
+      "pas": 125,
+      "fc": 75,
+      "consc": "a",
+      "temp": 36.8
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "fr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true fr",
+    "input": {
+      "fr": true,
+      "spo2": 97,
+      "escala": "1",
+      "o2": "0",
+      "pas": 125,
+      "fc": 75,
+      "consc": "a",
+      "temp": 36.8
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "fr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum fr",
+    "input": {
+      "fr": 2,
+      "spo2": 97,
+      "escala": "1",
+      "o2": "0",
+      "pas": 125,
+      "fc": 75,
+      "consc": "a",
+      "temp": 36.8
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "fr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum fr",
+    "input": {
+      "fr": 77,
+      "spo2": 97,
+      "escala": "1",
+      "o2": "0",
+      "pas": 125,
+      "fc": 75,
+      "consc": "a",
+      "temp": 36.8
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "fr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field spo2",
+    "input": {
+      "fr": 16,
+      "escala": "1",
+      "o2": "0",
+      "pas": 125,
+      "fc": 75,
+      "consc": "a",
+      "temp": 36.8
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "spo2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field spo2",
+    "input": {
+      "fr": 16,
+      "spo2": "",
+      "escala": "1",
+      "o2": "0",
+      "pas": 125,
+      "fc": 75,
+      "consc": "a",
+      "temp": 36.8
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "spo2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" spo2",
+    "input": {
+      "fr": 16,
+      "spo2": "NaN",
+      "escala": "1",
+      "o2": "0",
+      "pas": 125,
+      "fc": 75,
+      "consc": "a",
+      "temp": 36.8
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "spo2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" spo2",
+    "input": {
+      "fr": 16,
+      "spo2": "Infinity",
+      "escala": "1",
+      "o2": "0",
+      "pas": 125,
+      "fc": 75,
+      "consc": "a",
+      "temp": 36.8
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "spo2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" spo2",
+    "input": {
+      "fr": 16,
+      "spo2": "1e309",
+      "escala": "1",
+      "o2": "0",
+      "pas": 125,
+      "fc": 75,
+      "consc": "a",
+      "temp": 36.8
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "spo2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" spo2",
+    "input": {
+      "fr": 16,
+      "spo2": "invalid",
+      "escala": "1",
+      "o2": "0",
+      "pas": 125,
+      "fc": 75,
+      "consc": "a",
+      "temp": 36.8
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "spo2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} spo2",
+    "input": {
+      "fr": 16,
+      "spo2": {},
+      "escala": "1",
+      "o2": "0",
+      "pas": 125,
+      "fc": 75,
+      "consc": "a",
+      "temp": 36.8
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "spo2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true spo2",
+    "input": {
+      "fr": 16,
+      "spo2": true,
+      "escala": "1",
+      "o2": "0",
+      "pas": 125,
+      "fc": 75,
+      "consc": "a",
+      "temp": 36.8
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "spo2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum spo2",
+    "input": {
+      "fr": 16,
+      "spo2": 45,
+      "escala": "1",
+      "o2": "0",
+      "pas": 125,
+      "fc": 75,
+      "consc": "a",
+      "temp": 36.8
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "spo2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum spo2",
+    "input": {
+      "fr": 16,
+      "spo2": 110,
+      "escala": "1",
+      "o2": "0",
+      "pas": 125,
+      "fc": 75,
+      "consc": "a",
+      "temp": 36.8
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "spo2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field escala",
+    "input": {
+      "fr": 16,
+      "spo2": 97,
+      "o2": "0",
+      "pas": 125,
+      "fc": 75,
+      "consc": "a",
+      "temp": 36.8
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "escala"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field escala",
+    "input": {
+      "fr": 16,
+      "spo2": 97,
+      "escala": "",
+      "o2": "0",
+      "pas": 125,
+      "fc": 75,
+      "consc": "a",
+      "temp": 36.8
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "escala"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option escala",
+    "input": {
+      "fr": 16,
+      "spo2": 97,
+      "escala": "__ELUCENIA_INVALID_OPTION__",
+      "o2": "0",
+      "pas": 125,
+      "fc": 75,
+      "consc": "a",
+      "temp": 36.8
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "escala"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field o2",
+    "input": {
+      "fr": 16,
+      "spo2": 97,
+      "escala": "1",
+      "pas": 125,
+      "fc": 75,
+      "consc": "a",
+      "temp": 36.8
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "o2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field o2",
+    "input": {
+      "fr": 16,
+      "spo2": 97,
+      "escala": "1",
+      "o2": "",
+      "pas": 125,
+      "fc": 75,
+      "consc": "a",
+      "temp": 36.8
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "o2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option o2",
+    "input": {
+      "fr": 16,
+      "spo2": 97,
+      "escala": "1",
+      "o2": "__ELUCENIA_INVALID_OPTION__",
+      "pas": 125,
+      "fc": 75,
+      "consc": "a",
+      "temp": 36.8
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "o2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field pas",
+    "input": {
+      "fr": 16,
+      "spo2": 97,
+      "escala": "1",
+      "o2": "0",
+      "fc": 75,
+      "consc": "a",
+      "temp": 36.8
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "pas"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field pas",
+    "input": {
+      "fr": 16,
+      "spo2": 97,
+      "escala": "1",
+      "o2": "0",
+      "pas": "",
+      "fc": 75,
+      "consc": "a",
+      "temp": 36.8
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "pas"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" pas",
+    "input": {
+      "fr": 16,
+      "spo2": 97,
+      "escala": "1",
+      "o2": "0",
+      "pas": "NaN",
+      "fc": 75,
+      "consc": "a",
+      "temp": 36.8
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "pas"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" pas",
+    "input": {
+      "fr": 16,
+      "spo2": 97,
+      "escala": "1",
+      "o2": "0",
+      "pas": "Infinity",
+      "fc": 75,
+      "consc": "a",
+      "temp": 36.8
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "pas"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" pas",
+    "input": {
+      "fr": 16,
+      "spo2": 97,
+      "escala": "1",
+      "o2": "0",
+      "pas": "1e309",
+      "fc": 75,
+      "consc": "a",
+      "temp": 36.8
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "pas"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" pas",
+    "input": {
+      "fr": 16,
+      "spo2": 97,
+      "escala": "1",
+      "o2": "0",
+      "pas": "invalid",
+      "fc": 75,
+      "consc": "a",
+      "temp": 36.8
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "pas"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} pas",
+    "input": {
+      "fr": 16,
+      "spo2": 97,
+      "escala": "1",
+      "o2": "0",
+      "pas": {},
+      "fc": 75,
+      "consc": "a",
+      "temp": 36.8
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "pas"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true pas",
+    "input": {
+      "fr": 16,
+      "spo2": 97,
+      "escala": "1",
+      "o2": "0",
+      "pas": true,
+      "fc": 75,
+      "consc": "a",
+      "temp": 36.8
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "pas"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum pas",
+    "input": {
+      "fr": 16,
+      "spo2": 97,
+      "escala": "1",
+      "o2": "0",
+      "pas": 36,
+      "fc": 75,
+      "consc": "a",
+      "temp": 36.8
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "pas"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum pas",
+    "input": {
+      "fr": 16,
+      "spo2": 97,
+      "escala": "1",
+      "o2": "0",
+      "pas": 330,
+      "fc": 75,
+      "consc": "a",
+      "temp": 36.8
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "pas"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field fc",
+    "input": {
+      "fr": 16,
+      "spo2": 97,
+      "escala": "1",
+      "o2": "0",
+      "pas": 125,
+      "consc": "a",
+      "temp": 36.8
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "fc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field fc",
+    "input": {
+      "fr": 16,
+      "spo2": 97,
+      "escala": "1",
+      "o2": "0",
+      "pas": 125,
+      "fc": "",
+      "consc": "a",
+      "temp": 36.8
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "fc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" fc",
+    "input": {
+      "fr": 16,
+      "spo2": 97,
+      "escala": "1",
+      "o2": "0",
+      "pas": 125,
+      "fc": "NaN",
+      "consc": "a",
+      "temp": 36.8
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "fc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" fc",
+    "input": {
+      "fr": 16,
+      "spo2": 97,
+      "escala": "1",
+      "o2": "0",
+      "pas": 125,
+      "fc": "Infinity",
+      "consc": "a",
+      "temp": 36.8
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "fc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" fc",
+    "input": {
+      "fr": 16,
+      "spo2": 97,
+      "escala": "1",
+      "o2": "0",
+      "pas": 125,
+      "fc": "1e309",
+      "consc": "a",
+      "temp": 36.8
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "fc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" fc",
+    "input": {
+      "fr": 16,
+      "spo2": 97,
+      "escala": "1",
+      "o2": "0",
+      "pas": 125,
+      "fc": "invalid",
+      "consc": "a",
+      "temp": 36.8
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "fc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} fc",
+    "input": {
+      "fr": 16,
+      "spo2": 97,
+      "escala": "1",
+      "o2": "0",
+      "pas": 125,
+      "fc": {},
+      "consc": "a",
+      "temp": 36.8
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "fc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true fc",
+    "input": {
+      "fr": 16,
+      "spo2": 97,
+      "escala": "1",
+      "o2": "0",
+      "pas": 125,
+      "fc": true,
+      "consc": "a",
+      "temp": 36.8
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "fc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum fc",
+    "input": {
+      "fr": 16,
+      "spo2": 97,
+      "escala": "1",
+      "o2": "0",
+      "pas": 125,
+      "fc": 18,
+      "consc": "a",
+      "temp": 36.8
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "fc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum fc",
+    "input": {
+      "fr": 16,
+      "spo2": 97,
+      "escala": "1",
+      "o2": "0",
+      "pas": 125,
+      "fc": 275,
+      "consc": "a",
+      "temp": 36.8
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "fc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field consc",
+    "input": {
+      "fr": 16,
+      "spo2": 97,
+      "escala": "1",
+      "o2": "0",
+      "pas": 125,
+      "fc": 75,
+      "temp": 36.8
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "consc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field consc",
+    "input": {
+      "fr": 16,
+      "spo2": 97,
+      "escala": "1",
+      "o2": "0",
+      "pas": 125,
+      "fc": 75,
+      "consc": "",
+      "temp": 36.8
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "consc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option consc",
+    "input": {
+      "fr": 16,
+      "spo2": 97,
+      "escala": "1",
+      "o2": "0",
+      "pas": 125,
+      "fc": 75,
+      "consc": "__ELUCENIA_INVALID_OPTION__",
+      "temp": 36.8
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "consc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field temp",
+    "input": {
+      "fr": 16,
+      "spo2": 97,
+      "escala": "1",
+      "o2": "0",
+      "pas": 125,
+      "fc": 75,
+      "consc": "a"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "temp"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field temp",
+    "input": {
+      "fr": 16,
+      "spo2": 97,
+      "escala": "1",
+      "o2": "0",
+      "pas": 125,
+      "fc": 75,
+      "consc": "a",
+      "temp": ""
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "temp"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" temp",
+    "input": {
+      "fr": 16,
+      "spo2": 97,
+      "escala": "1",
+      "o2": "0",
+      "pas": 125,
+      "fc": 75,
+      "consc": "a",
+      "temp": "NaN"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "temp"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" temp",
+    "input": {
+      "fr": 16,
+      "spo2": 97,
+      "escala": "1",
+      "o2": "0",
+      "pas": 125,
+      "fc": 75,
+      "consc": "a",
+      "temp": "Infinity"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "temp"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" temp",
+    "input": {
+      "fr": 16,
+      "spo2": 97,
+      "escala": "1",
+      "o2": "0",
+      "pas": 125,
+      "fc": 75,
+      "consc": "a",
+      "temp": "1e309"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "temp"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" temp",
+    "input": {
+      "fr": 16,
+      "spo2": 97,
+      "escala": "1",
+      "o2": "0",
+      "pas": 125,
+      "fc": 75,
+      "consc": "a",
+      "temp": "invalid"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "temp"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} temp",
+    "input": {
+      "fr": 16,
+      "spo2": 97,
+      "escala": "1",
+      "o2": "0",
+      "pas": 125,
+      "fc": 75,
+      "consc": "a",
+      "temp": {}
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "temp"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true temp",
+    "input": {
+      "fr": 16,
+      "spo2": 97,
+      "escala": "1",
+      "o2": "0",
+      "pas": 125,
+      "fc": 75,
+      "consc": "a",
+      "temp": true
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "temp"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum temp",
+    "input": {
+      "fr": 16,
+      "spo2": 97,
+      "escala": "1",
+      "o2": "0",
+      "pas": 125,
+      "fc": 75,
+      "consc": "a",
+      "temp": 27
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "temp"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum temp",
+    "input": {
+      "fr": 16,
+      "spo2": 97,
+      "escala": "1",
+      "o2": "0",
+      "pas": 125,
+      "fc": 75,
+      "consc": "a",
+      "temp": 48.4
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "temp"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]

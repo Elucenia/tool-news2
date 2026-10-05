@@ -1,6 +1,19 @@
 [
   {
-    "label": "Sinais vitais normais: 0",
+    "id": "news2",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "Sinais vitais normais: 0",
+    "originalInput": {
+      "fr": 16,
+      "spo2": 97,
+      "escala": "1",
+      "o2": "0",
+      "pas": 125,
+      "fc": 75,
+      "consc": "a",
+      "temp": 36.8
+    },
     "input": {
       "fr": 16,
       "spo2": 97,
@@ -15,6 +28,32 @@
       "score": 0,
       "level": "low"
     },
+    "recordedResult": {
+      "main": [
+        "0",
+        "pontos"
+      ],
+      "label": "NEWS2",
+      "raw": {
+        "score": 0,
+        "red": 0,
+        "sat": 0
+      }
+    },
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
+  },
+  {
+    "id": "news2",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "Confusão nova isolada: 3 pontos em um parâmetro",
     "originalInput": {
       "fr": 16,
       "spo2": 97,
@@ -22,13 +61,9 @@
       "o2": "0",
       "pas": 125,
       "fc": 75,
-      "consc": "a",
+      "consc": "cvpu",
       "temp": 36.8
     },
-    "expandedZeroOptions": []
-  },
-  {
-    "label": "Confusão nova isolada: 3 pontos em um parâmetro",
     "input": {
       "fr": 16,
       "spo2": 97,
@@ -47,20 +82,42 @@
       "level": "mid",
       "verdict": "baixo-médio"
     },
-    "originalInput": {
-      "fr": 16,
-      "spo2": 97,
-      "escala": "1",
-      "o2": "0",
-      "pas": 125,
-      "fc": 75,
-      "consc": "cvpu",
-      "temp": 36.8
+    "recordedResult": {
+      "main": [
+        "3",
+        "pontos"
+      ],
+      "label": "NEWS2",
+      "raw": {
+        "score": 3,
+        "red": 1,
+        "sat": 0
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "FR 22 (2), SpO₂ 95 (1), PAS 105 (1), FC 95 (1), T 38,3 (1): 6",
+    "id": "news2",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "FR 22 (2), SpO₂ 95 (1), PAS 105 (1), FC 95 (1), T 38,3 (1): 6",
+    "originalInput": {
+      "fr": 22,
+      "spo2": 95,
+      "escala": "1",
+      "o2": "0",
+      "pas": 105,
+      "fc": 95,
+      "consc": "a",
+      "temp": 38.3
+    },
     "input": {
       "fr": 22,
       "spo2": 95,
@@ -76,20 +133,42 @@
       "level": "mid",
       "verdict": "médio"
     },
-    "originalInput": {
-      "fr": 22,
-      "spo2": 95,
-      "escala": "1",
-      "o2": "0",
-      "pas": 105,
-      "fc": 95,
-      "consc": "a",
-      "temp": 38.3
+    "recordedResult": {
+      "main": [
+        "6",
+        "pontos"
+      ],
+      "label": "NEWS2",
+      "raw": {
+        "score": 6,
+        "red": 0,
+        "sat": 1
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Choque séptico com O₂: 3+3+2+3+2+3+2 = 18",
+    "id": "news2",
+    "kind": "native-source-reference",
+    "index": 3,
+    "name": "Choque séptico com O₂: 3+3+2+3+2+3+2 = 18",
+    "originalInput": {
+      "fr": 26,
+      "spo2": 91,
+      "escala": "1",
+      "o2": "1",
+      "pas": 88,
+      "fc": 120,
+      "consc": "cvpu",
+      "temp": 39.5
+    },
     "input": {
       "fr": 26,
       "spo2": 91,
@@ -104,20 +183,42 @@
       "score": 18,
       "level": "high"
     },
-    "originalInput": {
-      "fr": 26,
-      "spo2": 91,
-      "escala": "1",
-      "o2": "1",
-      "pas": 88,
-      "fc": 120,
-      "consc": "cvpu",
-      "temp": 39.5
+    "recordedResult": {
+      "main": [
+        "18",
+        "pontos"
+      ],
+      "label": "NEWS2",
+      "raw": {
+        "score": 18,
+        "red": 1,
+        "sat": 3
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "DPOC, escala 2, SpO₂ 90% com O₂: só o oxigênio pontua (2)",
+    "id": "news2",
+    "kind": "native-source-reference",
+    "index": 4,
+    "name": "DPOC, escala 2, SpO₂ 90% com O₂: só o oxigênio pontua (2)",
+    "originalInput": {
+      "fr": 18,
+      "spo2": 90,
+      "escala": "2",
+      "o2": "1",
+      "pas": 130,
+      "fc": 80,
+      "consc": "a",
+      "temp": 37
+    },
     "input": {
       "fr": 18,
       "spo2": 90,
@@ -135,9 +236,35 @@
       },
       "level": "low"
     },
+    "recordedResult": {
+      "main": [
+        "2",
+        "pontos"
+      ],
+      "label": "NEWS2",
+      "raw": {
+        "score": 2,
+        "red": 0,
+        "sat": 0
+      }
+    },
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
+  },
+  {
+    "id": "news2",
+    "kind": "native-source-reference",
+    "index": 5,
+    "name": "Escala 2, SpO₂ 97% com O₂: 3 pontos na saturação",
     "originalInput": {
       "fr": 18,
-      "spo2": 90,
+      "spo2": 97,
       "escala": "2",
       "o2": "1",
       "pas": 130,
@@ -145,10 +272,6 @@
       "consc": "a",
       "temp": 37
     },
-    "expandedZeroOptions": []
-  },
-  {
-    "label": "Escala 2, SpO₂ 97% com O₂: 3 pontos na saturação",
     "input": {
       "fr": 18,
       "spo2": 97,
@@ -166,16 +289,25 @@
       },
       "level": "mid"
     },
-    "originalInput": {
-      "fr": 18,
-      "spo2": 97,
-      "escala": "2",
-      "o2": "1",
-      "pas": 130,
-      "fc": 80,
-      "consc": "a",
-      "temp": 37
+    "recordedResult": {
+      "main": [
+        "5",
+        "pontos"
+      ],
+      "label": "NEWS2",
+      "raw": {
+        "score": 5,
+        "red": 1,
+        "sat": 3
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]

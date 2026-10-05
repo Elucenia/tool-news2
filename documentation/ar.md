@@ -1,0 +1,128 @@
+<!-- ELUCENIA technical documentation · news2 · ar · no clinical/professional/rights approval -->
+
+# NEWS2 (الدرجة الوطنية للإنذار المبكر 2)
+
+[الشروط والمصادر والأذونات](https://elucenia.org/ar/tools/news2)
+
+## كيفية الاستخدام
+
+استخدم الأداة في البوابة أو افتح index.html عبر خادم HTTP محلي. اختر اللغة، وأكمل الحقول، ثم أجرِ الحساب.
+
+## المدخلات والوحدات
+
+### معدل التنفس
+
+`fr`
+
+نفس/دقيقة · النطاق: ٣–٧٠
+
+### SpO₂
+
+`spo2`
+
+% · النطاق: ٥٠–١٠٠
+
+### مقياس SpO₂
+
+`escala`
+
+- `1` — المقياس ١ (الافتراضي)
+- `2` — المقياس ٢ (فشل تنفسي مصحوب بفرط ثاني أكسيد الكربون في الدم ومؤكَّد؛ النطاق المستهدف الموصوف ٨٨–٩٢%)
+
+### هل يستخدم الأكسجين؟
+
+`o2`
+
+- `0` — هواء الغرفة
+- `1` — أكسجين إضافي
+
+### الضغط الانقباضي
+
+`pas`
+
+mmHg · النطاق: ٤٠–٣٠٠
+
+### معدل ضربات القلب
+
+`fc`
+
+ضربة/دقيقة · النطاق: ٢٠–٢٥٠
+
+### مستوى الوعي
+
+`consc`
+
+- `a` — يقظ
+- `cvpu` — ارتباك جديد، أو استجابة للصوت أو للألم، أو عدم استجابة
+
+### درجة الحرارة
+
+`temp`
+
+°C · النطاق: ٣٠–٤٤
+
+## إصدار الطريقة
+
+NEWS 2/Royal College of Physicians ديسمبر2017: 6 معلمات، مقياسان SpO₂، +2 للأكسجين؛ ليس NEWS 2012
+
+## المعادلة الموثقة
+
+معدل التنفس: ≤ 8 = 3; 9–11 = 1; 12–20 = 0; 21–24 = 2; ≥ 25 = 3.
+
+SpO₂ مقياس 1: ≤ 91 = 3; 92–93 = 2; 94–95 = 1; ≥ 96 = 0.
+
+SpO₂ مقياس 2: ≤ 83 = 3; 84–85 = 2; 86–87 = 1; 88–92 (أو ≥ 93 في هواء الغرفة) = 0; 93–94 مع O₂ = 1; 95–96 مع O₂ = 2; ≥ 97 مع O₂ = 3.
+
+أكسجين إضافي: 2.
+
+الضغط الانقباضي: ≤ 90 = 3; 91–100 = 2; 101–110 = 1; 111–219 = 0; ≥ 220 = 3.
+
+معدل القلب: ≤ 40 = 3; 41–50 = 1; 51–90 = 0; 91–110 = 1; 111–130 = 2; ≥ 131 = 3.
+
+الوعي: يقظ = 0; ارتباك جديد، استجابة للصوت أو للألم أو انعدام الاستجابة = 3.
+
+الحرارة: ≤ 35.0 = 3; 35.1–36.0 = 1; 36.1–38.0 = 0; 38.1–39.0 = 1; ≥ 39.1 = 2.
+
+## الحدود والفئة السكانية
+
+يُستخدم NEWS2 لتقييم الأشخاص بعمر 16 سنة فأكثر؛ ولا ينبغي استخدامه بوصفه مقياسًا متحققًا من صلاحيته لدى من هم دون 16 سنة أو الحوامل. استخدم مقياس SpO₂ 2 فقط في حالة فشل تنفسي مصحوب بفرط ثاني أكسيد الكربون في الدم مؤكد بتحليل غازات الدم خلال الدخول الحالي إلى المستشفى أو دخول سابق، مع هدف تشبع موصوف قدره 88–92% وتوثيق قرار ممارس سريري مختص. استخدم المقياس 1 في الحالات الأخرى. يساعد المجموع في تقييم التدهور ولا يصدر أمرًا تلقائيًا لتقديم الرعاية.
+
+## المراجع
+
+- [Royal College of Physicians. National Early Warning Score (NEWS) 2: standardising the assessment of acute-illness severity in the NHS. Londres, 2017.](https://www.rcp.ac.uk/improving-care/resources/national-early-warning-score-news-2/)
+
+- [Smith GB et al. The ability of the National Early Warning Score (NEWS) to discriminate patients at risk of early cardiac arrest, unanticipated intensive care unit admission, and death. Resuscitation, 2013.](https://doi.org/10.1016/j.resuscitation.2012.12.016)
+
+- [Pimentel MAF et al. A comparison of the ability of the National Early Warning Score and the National Early Warning Score 2 to identify patients at risk of in-hospital mortality: a multi-centre database study. Resuscitation, 2019.](https://doi.org/10.1016/j.resuscitation.2018.09.026)
+
+- [RCP NEWS2 December2017](https://www.rcp.ac.uk/media/a4ibkkbf/news2-final-report_0_0.pdf)
+
+- [RCP NRAP COPD clinical audit dataset v6.2 May2025](https://www.rcp.ac.uk/media/0obnabyj/nrap-copd-clinical-audit-dataset-v62-may-2025-final.pdf)
+
+- [RCP Acute care toolkit15 November2019](https://www.rcp.ac.uk/media/pnsglw10/acute-care-toolkit-15_act_pregnancy_nov19_0.pdf)
+
+## إعادة إجراء الاختبارات التقنية
+
+شغّل node test.cjs في المجلد الجذري لهذا المستودع لتكرار الحالات الاصطناعية المسجلة. تُحفظ المدخلات والنتائج المتوقعة وحدود التفاوت الأصلية. لا تُعدّ الاختبارات التقنية تحققًا سريريًا.
+
+```sh
+node test.cjs
+```
+
+يحتوي tool.json على المصادر والإصدار ونطاق المراجعة. يحتفظ examples.json بالمدخلات والنتائج المتوقعة للحالات الاصطناعية؛ ويسجل results.json النتائج التي تم الحصول عليها.
+
+[السجل والمراجع](../tool.json) · [شيفرة JavaScript](../calculator.js) · [حالات مرجعية](../examples.json) · [results.json](../results.json)
+
+## المراجعة وشروط الاستخدام
+
+لم تُجرَ مراجعة سريرية مستقلة.
+
+هذه الواجهة ترجمة أعدّها مؤلفوها، وليست إصدارًا رسميًا أو معتمدًا. لم تُجرَ مراجعة سريرية مستقلة أو مراجعة لغوية مهنية، ولم تُستكمل الموافقة على حقوق استخدام الأدوات.
+
+نتيجة المعادلة أو التصنيف. يعتمد التفسير والتصرف ومدى الانطباق على التقييم المهني والمصدر المحدد.
+
+## الترخيص ونسبة العمل إلى أصحابه
+
+ينطبق Apache-2.0 على كود ELUCENIA فقط. تبقى حقوق الأدوات والمنشورات والترجمات والبيانات لأصحابها المعنيين. احتفظ بملفّي LICENSE وNOTICE.
+
+ELUCENIA · Felipe Guedes · Copyright © 2026

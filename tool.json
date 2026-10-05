@@ -4,14 +4,14 @@
     "title": "NEWS2 (National Early Warning Score 2)",
     "short": "Deterioração clínica pelos sinais vitais",
     "desc": "Calcule o NEWS2 pelos sinais vitais (FR, SpO₂, oxigênio, PAS, FC, consciência e temperatura) e veja o nível de risco e a frequência de monitorização.",
-    "lead": "Escore de alerta precoce do Royal College of Physicians que detecta deterioração clínica em adultos a partir de sete parâmetros fisiológicos e define a resposta da equipe.",
+    "lead": "Escore de alerta precoce do Royal College of Physicians que reúne seis parâmetros fisiológicos e o uso de oxigênio suplementar para apoiar a avaliação de deterioração clínica em adultos.",
+    "kind": "Calculadora",
     "spec": [
       "medicina-de-emergencia",
       "medicina-intensiva",
       "clinica-medica",
       "infectologia"
     ],
-    "tier": 1,
     "fields": [
       [
         "fr",
@@ -42,7 +42,7 @@
         {
           "opts": {
             "1": "Escala 1 (padrão)",
-            "2": "Escala 2 (hipercapnia, alvo 88–92%)"
+            "2": "Escala 2 (insuficiência respiratória hipercápnica confirmada; alvo 88–92% prescrito)"
           }
         }
       ],
@@ -104,45 +104,6 @@
       ]
     ],
     "formula": "<ul><li><strong>FR:</strong> ≤ 8 = 3; 9–11 = 1; 12–20 = 0; 21–24 = 2; ≥ 25 = 3.</li><li><strong>SpO₂ escala 1:</strong> ≤ 91 = 3; 92–93 = 2; 94–95 = 1; ≥ 96 = 0.</li><li><strong>SpO₂ escala 2:</strong> ≤ 83 = 3; 84–85 = 2; 86–87 = 1; 88–92 (ou ≥ 93 em ar ambiente) = 0; 93–94 com O₂ = 1; 95–96 com O₂ = 2; ≥ 97 com O₂ = 3.</li><li><strong>Oxigênio suplementar:</strong> 2.</li><li><strong>PAS:</strong> ≤ 90 = 3; 91–100 = 2; 101–110 = 1; 111–219 = 0; ≥ 220 = 3.</li><li><strong>FC:</strong> ≤ 40 = 3; 41–50 = 1; 51–90 = 0; 91–110 = 1; 111–130 = 2; ≥ 131 = 3.</li><li><strong>Consciência:</strong> alerta = 0; confusão nova, voz, dor ou sem resposta = 3.</li><li><strong>Temperatura:</strong> ≤ 35,0 = 3; 35,1–36,0 = 1; 36,1–38,0 = 0; 38,1–39,0 = 1; ≥ 39,1 = 2.</li></ul>",
-    "table": [
-      [
-        "NEWS2",
-        "Risco clínico",
-        "Monitorização mínima e resposta"
-      ],
-      [
-        "0",
-        "Baixo",
-        "A cada 12 h"
-      ],
-      [
-        "1 a 4",
-        "Baixo",
-        "A cada 4 a 6 h; avaliação pela enfermagem"
-      ],
-      [
-        "3 em um parâmetro",
-        "Baixo-médio",
-        "A cada 1 h; avaliação médica urgente"
-      ],
-      [
-        "5 a 6",
-        "Médio",
-        "A cada 1 h; resposta urgente por equipe com competência em paciente agudo"
-      ],
-      [
-        "7 ou mais",
-        "Alto",
-        "Monitorização contínua; resposta de emergência pela equipe de cuidados críticos"
-      ]
-    ],
-    "tips": [
-      "A escala 2 da SpO₂ só deve ser usada em insuficiência respiratória hipercápnica confirmada (ex.: DPOC) e com alvo de 88 a 92% prescrito por médico.",
-      "Confusão <strong>nova</strong> vale 3 pontos isoladamente: em paciente com infecção, é um sinal precoce de sepse.",
-      "O NEWS2 não foi validado em gestantes (use escores obstétricos) nem em menores de 16 anos.",
-      "Em comparação com o qSOFA, o NEWS2 tem maior sensibilidade para identificar pacientes com infecção em risco de deterioração no pronto-socorro.",
-      "O escore orienta a frequência de reavaliação; tendência de alta entre medidas é tão importante quanto o valor isolado."
-    ],
     "sources": [
       [
         "Royal College of Physicians. National Early Warning Score (NEWS) 2: standardising the assessment of acute-illness severity in the NHS. Londres, 2017.",
@@ -155,6 +116,18 @@
       [
         "Pimentel MAF et al. A comparison of the ability of the National Early Warning Score and the National Early Warning Score 2 to identify patients at risk of in-hospital mortality: a multi-centre database study. Resuscitation, 2019.",
         "https://doi.org/10.1016/j.resuscitation.2018.09.026"
+      ],
+      [
+        "RCP NEWS2 December2017",
+        "https://www.rcp.ac.uk/media/a4ibkkbf/news2-final-report_0_0.pdf"
+      ],
+      [
+        "RCP NRAP COPD clinical audit dataset v6.2 May2025",
+        "https://www.rcp.ac.uk/media/0obnabyj/nrap-copd-clinical-audit-dataset-v62-may-2025-final.pdf"
+      ],
+      [
+        "RCP Acute care toolkit15 November2019",
+        "https://www.rcp.ac.uk/media/pnsglw10/acute-care-toolkit-15_act_pregnancy_nov19_0.pdf"
       ]
     ],
     "cases": [
@@ -272,9 +245,6 @@
         }
       ]
     ],
-    "kind": "Calculadora",
-    "config": null,
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -283,24 +253,558 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-03T19:41:12.449Z",
+      "total": 907,
+      "passed": 907,
+      "evidencePath": "reports/review-20261003/news2-source-oracles.json",
+      "scope": "Every integer respiration, saturation, systolic pressure and pulse value in the implementation range; temperature at each source tenth of a degree; both oxygen scales, oxygen supplementation and consciousness. Values between the chart measurement increments are not covered.",
+      "sourceRowCount": 907,
+      "uniqueApiInputCount": 903,
+      "inputIdentity": {
+        "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+        "audit": {
+          "file": "reports/review-20261003/independent-source-corpus-input-identity-audit-final25.json",
+          "sha256": "35d65e84c5608a5f572fce6837f0a8c101b2266f5d6eec32a3d60d2bb6b022ca"
+        },
+        "sourceRows": 907,
+        "uniqueApiInputs": 903,
+        "duplicateRows": 4,
+        "duplicates": [
+          {
+            "first": 13,
+            "repeat": 148,
+            "input": {
+              "fr": 16,
+              "spo2": 97,
+              "escala": "1",
+              "o2": "0",
+              "pas": 120,
+              "fc": 80,
+              "consc": "a",
+              "temp": 36.8
+            }
+          },
+          {
+            "first": 13,
+            "repeat": 389,
+            "input": {
+              "fr": 16,
+              "spo2": 97,
+              "escala": "1",
+              "o2": "0",
+              "pas": 120,
+              "fc": 80,
+              "consc": "a",
+              "temp": 36.8
+            }
+          },
+          {
+            "first": 13,
+            "repeat": 607,
+            "input": {
+              "fr": 16,
+              "spo2": 97,
+              "escala": "1",
+              "o2": "0",
+              "pas": 120,
+              "fc": 80,
+              "consc": "a",
+              "temp": 36.8
+            }
+          },
+          {
+            "first": 13,
+            "repeat": 832,
+            "input": {
+              "fr": 16,
+              "spo2": 97,
+              "escala": "1",
+              "o2": "0",
+              "pas": 120,
+              "fc": 80,
+              "consc": "a",
+              "temp": 36.8
+            }
+          }
+        ],
+        "coverageStatusUnchanged": true
+      },
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "NEWS 2/Royal Collegeof Physicians December 2017:6 parâmetros,2 escalas Sp O 2,+2 oxigênio; sem NEWS 2012",
+    "implementationVersion": "news2@native-2026-10-04+cd9bd3a519b4",
+    "currentMethodSource": "https://www.rcp.ac.uk/improving-care/resources/national-early-warning-score-news-2/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "FR: ≤ 8 = 3; 9–11 = 1; 12–20 = 0; 21–24 = 2; ≥ 25 = 3. SpO₂ escala 1: ≤ 91 = 3; 92–93 = 2; 94–95 = 1; ≥ 96 = 0. SpO₂ escala 2: ≤ 83 = 3; 84–85 = 2; 86–87 = 1; 88–92 (ou ≥ 93 em ar ambiente) = 0; 93–94 com O₂ = 1; 95–96 com O₂ = 2; ≥ 97 com O₂ = 3. Oxigênio suplementar: 2. PAS: ≤ 90 = 3; 91–100 = 2; 101–110 = 1; 111–219 = 0; ≥ 220 = 3. FC: ≤ 40 = 3; 41–50 = 1; 51–90 = 0; 91–110 = 1; 111–130 = 2; ≥ 131 = 3. Consciência: alerta = 0; confusão nova, voz, dor ou sem resposta = 3. Temperatura: ≤ 35,0 = 3; 35,1–36,0 = 1; 36,1–38,0 = 0; 38,1–39,0 = 1; ≥ 39,1 = 2.",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "fr",
+            "label": "Frequência respiratória",
+            "type": "num",
+            "min": 3,
+            "max": 70,
+            "unit": "irpm",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "spo2",
+            "label": "SpO₂",
+            "type": "num",
+            "min": 50,
+            "max": 100,
+            "unit": "%",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "escala",
+            "label": "Escala de SpO₂",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "1": "Escala 1 (padrão)",
+              "2": "Escala 2 (insuficiência respiratória hipercápnica confirmada; alvo 88–92% prescrito)"
+            }
+          },
+          {
+            "key": "o2",
+            "label": "Em uso de oxigênio?",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "Ar ambiente",
+              "1": "Oxigênio suplementar"
+            }
+          },
+          {
+            "key": "pas",
+            "label": "Pressão sistólica",
+            "type": "num",
+            "min": 40,
+            "max": 300,
+            "unit": "mmHg",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "fc",
+            "label": "Frequência cardíaca",
+            "type": "num",
+            "min": 20,
+            "max": 250,
+            "unit": "bpm",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "consc",
+            "label": "Nível de consciência",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "a": "Alerta",
+              "cvpu": "Confusão nova, responde à voz, à dor ou não responde"
+            }
+          },
+          {
+            "key": "temp",
+            "label": "Temperatura",
+            "type": "num",
+            "min": 30,
+            "max": 44,
+            "unit": "°C",
+            "optional": false,
+            "options": null
+          }
+        ],
+        "hash": "41c5b7066ebea6c7acfdd1f43bf5e969cd7752e76ffe19c83e026f7097f059f7"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Royal College of Physicians. National Early Warning Score (NEWS) 2: standardising the assessment of acute-illness severity in the NHS. Londres, 2017.",
+          "url": "https://www.rcp.ac.uk/improving-care/resources/national-early-warning-score-news-2/",
+          "class": "institutional-edition-and-use-terms-page-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "edition": "NEWS 2, 19 December 2017",
+          "conditions": "Attribution; unmodified material; original charts in colour; translated materials must state that RCP has not specifically approved the wording."
+        },
+        {
+          "citation": "Smith GB et al. The ability of the National Early Warning Score (NEWS) to discriminate patients at risk of early cardiac arrest, unanticipated intensive care unit admission, and death. Resuscitation, 2013.",
+          "url": "https://doi.org/10.1016/j.resuscitation.2012.12.016",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "The ability of the National Early Warning Score (NEWS) to discriminate patients at risk of early cardiac arrest, unanticipated intensive care unit admission, and death.",
+            "year": "2013",
+            "firstPublicationDate": "2013-01-04",
+            "doi": "10.1016/j.resuscitation.2012.12.016",
+            "pmid": "23295778",
+            "journal": "Resuscitation",
+            "authors": "Smith GB, Prytherch DR, Meredith P, Schmidt PE, Featherstone PI."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/23295778/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "fd454823902c16f75dda8798781647818fc5aef6376b879d739d2a2ee463c158",
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Pimentel MAF et al. A comparison of the ability of the National Early Warning Score and the National Early Warning Score 2 to identify patients at risk of in-hospital mortality: a multi-centre database study. Resuscitation, 2019.",
+          "url": "https://doi.org/10.1016/j.resuscitation.2018.09.026",
+          "class": "primary-publication-full-text-retrieved",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": true,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "A comparison of the ability of the National Early Warning Score and the National Early Warning Score 2 to identify patients at risk of in-hospital mortality: A multi-centre database study.",
+            "year": "2019",
+            "firstPublicationDate": "2018-10-01",
+            "doi": "10.1016/j.resuscitation.2018.09.026",
+            "pmid": "30287355",
+            "pmcid": "PMC6995996",
+            "journal": "Resuscitation",
+            "authors": "Pimentel MAF, Redfern OC, Gerry S, Collins GS, Malycha J, Prytherch D, Schmidt PE, Smith GB, Watkinson PJ."
+          },
+          "primaryPublicationUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6995996/",
+          "abstractAvailable": true,
+          "fullTextSha256": "4238042f97cb5b2f2691c59b72dff8cd22982ec162037a95f7462c0b5c5f6e74",
+          "abstractSha256": "b7d3427ad727ab644e1d898da4893b2812f583a91789e50aed59923fdb4c3163",
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-03T19:41:12.449Z",
+        "total": 907,
+        "passed": 907,
+        "evidencePath": "reports/review-20261003/news2-source-oracles.json",
+        "scope": "Every integer respiration, saturation, systolic pressure and pulse value in the implementation range; temperature at each source tenth of a degree; both oxygen scales, oxygen supplementation and consciousness. Values between the chart measurement increments are not covered.",
+        "sourceRowCount": 907,
+        "uniqueApiInputCount": 903,
+        "inputIdentity": {
+          "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+          "audit": {
+            "file": "reports/review-20261003/independent-source-corpus-input-identity-audit-final25.json",
+            "sha256": "35d65e84c5608a5f572fce6837f0a8c101b2266f5d6eec32a3d60d2bb6b022ca"
+          },
+          "sourceRows": 907,
+          "uniqueApiInputs": 903,
+          "duplicateRows": 4,
+          "duplicates": [
+            {
+              "first": 13,
+              "repeat": 148,
+              "input": {
+                "fr": 16,
+                "spo2": 97,
+                "escala": "1",
+                "o2": "0",
+                "pas": 120,
+                "fc": 80,
+                "consc": "a",
+                "temp": 36.8
+              }
+            },
+            {
+              "first": 13,
+              "repeat": 389,
+              "input": {
+                "fr": 16,
+                "spo2": 97,
+                "escala": "1",
+                "o2": "0",
+                "pas": 120,
+                "fc": 80,
+                "consc": "a",
+                "temp": 36.8
+              }
+            },
+            {
+              "first": 13,
+              "repeat": 607,
+              "input": {
+                "fr": 16,
+                "spo2": 97,
+                "escala": "1",
+                "o2": "0",
+                "pas": 120,
+                "fc": 80,
+                "consc": "a",
+                "temp": 36.8
+              }
+            },
+            {
+              "first": 13,
+              "repeat": 832,
+              "input": {
+                "fr": 16,
+                "spo2": 97,
+                "escala": "1",
+                "o2": "0",
+                "pas": 120,
+                "fc": 80,
+                "consc": "a",
+                "temp": 36.8
+              }
+            }
+          ],
+          "coverageStatusUnchanged": true
+        }
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "cd9bd3a519b45e17640257c5867c9f7cec02aee37f5eab1ddb6ab7c25f08b1a0",
+      "previousImplementationHash": "03adc169ad4266f6f67f08e599fb6a3a8ca96427a2b617dc73d869ce0816cc62",
+      "previousInputContract": {
+        "fields": [
+          {
+            "key": "fr",
+            "label": "Frequência respiratória",
+            "type": "num",
+            "min": 3,
+            "max": 70,
+            "unit": "irpm",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "spo2",
+            "label": "SpO₂",
+            "type": "num",
+            "min": 50,
+            "max": 100,
+            "unit": "%",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "escala",
+            "label": "Escala de SpO₂",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "1": "Escala 1 (padrão)",
+              "2": "Escala 2 (hipercapnia, alvo 88–92%)"
+            }
+          },
+          {
+            "key": "o2",
+            "label": "Em uso de oxigênio?",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "Ar ambiente",
+              "1": "Oxigênio suplementar"
+            }
+          },
+          {
+            "key": "pas",
+            "label": "Pressão sistólica",
+            "type": "num",
+            "min": 40,
+            "max": 300,
+            "unit": "mmHg",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "fc",
+            "label": "Frequência cardíaca",
+            "type": "num",
+            "min": 20,
+            "max": 250,
+            "unit": "bpm",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "consc",
+            "label": "Nível de consciência",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "a": "Alerta",
+              "cvpu": "Confusão nova, responde à voz, à dor ou não responde"
+            }
+          },
+          {
+            "key": "temp",
+            "label": "Temperatura",
+            "type": "num",
+            "min": 30,
+            "max": 44,
+            "unit": "°C",
+            "optional": false,
+            "options": null
+          }
+        ],
+        "hash": "56ff42ccf9d85782f37dc61e5e486108de09b1c4bff7d9511d59bc00923273e8"
+      },
+      "metadataAmendment": {
+        "file": "reports/review-20261003/adapter-metadata-label-corrections.json",
+        "scope": "Current option labels, same numeric option keys and unchanged calculation text; no formula-conformance or clinical approval inferred",
+        "calculationTextSha256": "ce009c372ee54f70d1a33e60bf9ca25c8b3ca3659feecb86abc71809e1d52fec"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-04T17:52:09.841Z",
+          "changes": [
+            "inputContract",
+            "implementationVersion"
+          ],
+          "priorImplementationVersion": "news2@native-2026-10-03+03adc169ad42",
+          "priorImplementationHash": "cd9bd3a519b45e17640257c5867c9f7cec02aee37f5eab1ddb6ab7c25f08b1a0",
+          "priorInputContract": {
+            "fields": [
+              {
+                "key": "fr",
+                "label": "Frequência respiratória",
+                "type": "num",
+                "min": 3,
+                "max": 70,
+                "unit": "irpm",
+                "optional": false,
+                "options": null
+              },
+              {
+                "key": "spo2",
+                "label": "SpO₂",
+                "type": "num",
+                "min": 50,
+                "max": 100,
+                "unit": "%",
+                "optional": false,
+                "options": null
+              },
+              {
+                "key": "escala",
+                "label": "Escala de SpO₂",
+                "type": "radio",
+                "optional": false,
+                "options": {
+                  "1": "Escala 1 (padrão)",
+                  "2": "Escala 2 (insuficiência respiratória hipercápnica confirmada; alvo 88–92% prescrito)"
+                }
+              },
+              {
+                "key": "o2",
+                "label": "Em uso de oxigênio?",
+                "type": "radio",
+                "optional": false,
+                "options": {
+                  "0": "Ar ambiente",
+                  "1": "Oxigênio suplementar"
+                }
+              },
+              {
+                "key": "pas",
+                "label": "Pressão sistólica",
+                "type": "num",
+                "min": 40,
+                "max": 300,
+                "unit": "mmHg",
+                "optional": false,
+                "options": null
+              },
+              {
+                "key": "fc",
+                "label": "Frequência cardíaca",
+                "type": "num",
+                "min": 20,
+                "max": 250,
+                "unit": "bpm",
+                "optional": false,
+                "options": null
+              },
+              {
+                "key": "consc",
+                "label": "Nível de consciência",
+                "type": "radio",
+                "optional": false,
+                "options": {
+                  "a": "Alerta",
+                  "cvpu": "Confusão nova, responde à voz, à dor ou não responde"
+                }
+              },
+              {
+                "key": "temp",
+                "label": "Temperatura",
+                "type": "num",
+                "min": 30,
+                "max": 44,
+                "unit": "°C",
+                "optional": false,
+                "options": null
+              }
+            ],
+            "hash": "f7c00c7fbc3923c875a5dc28c780279efbc6c283355fd23af39326a13168c55e"
+          },
+          "priorImplementedVariant": "FR: ≤ 8 = 3; 9–11 = 1; 12–20 = 0; 21–24 = 2; ≥ 25 = 3. SpO₂ escala 1: ≤ 91 = 3; 92–93 = 2; 94–95 = 1; ≥ 96 = 0. SpO₂ escala 2: ≤ 83 = 3; 84–85 = 2; 86–87 = 1; 88–92 (ou ≥ 93 em ar ambiente) = 0; 93–94 com O₂ = 1; 95–96 com O₂ = 2; ≥ 97 com O₂ = 3. Oxigênio suplementar: 2. PAS: ≤ 90 = 3; 91–100 = 2; 101–110 = 1; 111–219 = 0; ≥ 220 = 3. FC: ≤ 40 = 3; 41–50 = 1; 51–90 = 0; 91–110 = 1; 111–130 = 2; ≥ 131 = 3. Consciência: alerta = 0; confusão nova, voz, dor ou sem resposta = 3. Temperatura: ≤ 35,0 = 3; 35,1–36,0 = 1; 36,1–38,0 = 0; 38,1–39,0 = 1; ≥ 39,1 = 2.",
+          "explicitMethodVersion": "NEWS 2/Royal Collegeof Physicians December 2017:6 parâmetros,2 escalas Sp O 2,+2 oxigênio; sem NEWS 2012",
+          "sourceEvidenceUnchanged": true,
+          "independentArithmeticUnchanged": true,
+          "clinicalApproval": "not-performed",
+          "professionalLanguageApproval": "not-performed",
+          "sourceRightsApproval": "not-performed",
+          "scope": "Declarative technical rebinding only. Source access scope, source proofs and original failure/test histories remain unchanged."
+        }
+      ]
+    },
+    "limits": "NEWS2 destina-se à avaliação de pessoas com 16 anos ou mais; não deve ser usado como escore validado em menores de 16 anos ou gestantes. Use a escala de SpO₂ 2 somente em insuficiência respiratória hipercápnica confirmada por gasometria na admissão atual ou anterior, com alvo de saturação de 88–92% prescrito e decisão de profissional clínico competente registrada. Nas demais situações, use a escala 1. O total apoia a avaliação de deterioração e não gera uma ordem assistencial automática.",
+    "limitsEvidence": {
+      "status": "primary-source-documentation-checked",
+      "sources": [
+        {
+          "url": "https://www.rcp.ac.uk/media/a4ibkkbf/news2-final-report_0_0.pdf",
+          "edition": "RCP NEWS2 December2017",
+          "sectionsActuallyRead": "Recomendação de população≥16 e exclusão de menores16/gestação, texto indexado oficial",
+          "access": "primary-indexed-text"
+        },
+        {
+          "url": "https://www.rcp.ac.uk/media/0obnabyj/nrap-copd-clinical-audit-dataset-v62-may-2025-final.pdf",
+          "edition": "RCP NRAP COPD clinical audit dataset v6.2 May2025",
+          "sectionsActuallyRead": "Questão3.1b, páginas11–12: help note Escala2",
+          "access": "primary-readable-pdf-text"
+        },
+        {
+          "url": "https://www.rcp.ac.uk/media/pnsglw10/acute-care-toolkit-15_act_pregnancy_nov19_0.pdf",
+          "edition": "RCP Acute care toolkit15 November2019",
+          "sectionsActuallyRead": "Trecho oficial indexado de monitorização em gestação",
+          "access": "primary-indexed-text"
+        }
+      ],
+      "clinicalValidation": "not-performed",
+      "professionalLanguageReview": "not-performed",
+      "arithmeticChanged": false
     }
   },
-  "review": {
-    "id": "news2",
-    "status": "needs-review",
-    "reason": "Conferidos uso adulto, cuidado com escala SpO₂ 2 e regras de reprodução. O RCP permite reproduzir NEWS2 sob condições de atribuição, integridade, cores e aviso específico para tradução. Revisar a adaptação portuguesa e contexto antes de declarar conformidade; não converter resultado em ordem assistencial.",
-    "sourceUrl": "https://rcp.ac.uk/resources/national-early-warning-score-news-2/",
-    "sourceTitle": "Royal College of Physicians — NEWS2",
-    "sourceDate": "2017 (instrumento; página consultada em 2026-09-25)",
-    "publisherRegion": "Reino Unido / RCP",
-    "checkedAt": "2026-09-25",
-    "clinicalValidation": "not-performed",
-    "rightsReview": "A página oficial traz condições específicas para reproduções e traduções; não é declaração de licença já cumprida pelo ZIP."
+  "currentSource": {
+    "file": "apps/website/private/tool-code/news2/calculator.js",
+    "bytes": 6323,
+    "sha256": "cd9bd3a519b45e17640257c5867c9f7cec02aee37f5eab1ddb6ab7c25f08b1a0"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "a7a3feaea98f1ae88ebdfee92ac10d3e8520f4c7a3d0494c71a46e804ccf5dd8",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 907,
+      "sha256": "c3e7779e483a0069c862ad3381fb238d5a246a690d010733323c8c5df0e2ebf2",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }
