@@ -126,3 +126,71 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+Low clinical risk
+
+| Result details | |
+| --- | --- |
+| Monitoring of vital signs | at least every 12 hours |
+| RR · SpO₂ · O₂ · SBP · HR · consciousness · temperature | 0 · 0 · 0 · 0 · 0 · 0 · 0 |
+
+
+### 2
+
+Low-to-medium risk: one isolated parameter with 3 points calls for urgent medical assessment
+
+| Result details | |
+| --- | --- |
+| Monitoring of vital signs | at least every 1 hour |
+| RR · SpO₂ · O₂ · SBP · HR · consciousness · temperature | 0 · 0 · 0 · 0 · 0 · 3 · 0 |
+
+
+### 3
+
+Medium clinical risk: urgent medical assessment
+
+| Result details | |
+| --- | --- |
+| Monitoring of vital signs | at least every 1 hour |
+| RR · SpO₂ · O₂ · SBP · HR · consciousness · temperature | 2 · 1 · 0 · 1 · 1 · 0 · 1 |
+
+
+### 4
+
+High clinical risk: emergency response by the critical care team
+
+| Result details | |
+| --- | --- |
+| Monitoring of vital signs | continuous |
+| RR · SpO₂ · O₂ · SBP · HR · consciousness · temperature | 3 · 3 · 2 · 3 · 2 · 3 · 2 |
+
+
+### 5
+
+Low clinical risk: nursing assessment
+
+| Result details | |
+| --- | --- |
+| Monitoring of vital signs | at least every 4 to 6 hours |
+| RR · SpO₂ · O₂ · SBP · HR · consciousness · temperature | 0 · 0 · 2 · 0 · 0 · 0 · 0 |
+
+SpO₂ scale 2: use only in confirmed hypercapnic respiratory failure, with prescribed target 88 to 92%.
+
+
+### 6
+
+Medium clinical risk: urgent medical assessment
+
+| Result details | |
+| --- | --- |
+| Monitoring of vital signs | at least every 1 hour |
+| RR · SpO₂ · O₂ · SBP · HR · consciousness · temperature | 0 · 3 · 2 · 0 · 0 · 0 · 0 |
+
+SpO₂ scale 2: use only in confirmed hypercapnic respiratory failure, with prescribed target 88 to 92%.
+

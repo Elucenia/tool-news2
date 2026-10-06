@@ -126,3 +126,71 @@ Ergebnis der Formel oder Klassifikation. Interpretation, Vorgehen und Anwendbark
 Apache-2.0 gilt nur für den ELUCENIA-Code. Die Rechte an Instrumenten, Veröffentlichungen, Übersetzungen und Daten verbleiben bei den jeweiligen Rechteinhabern. Bewahren Sie LICENSE und NOTICE auf.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Dokumentierte Ergebnisse
+
+Die folgenden Angaben bewahren die Ausgaben der Methode für synthetische Beispiele. Sie stellen keine unabhängige klinische Validierung dar.
+
+### 1
+
+Niedriges klinisches Risiko
+
+| Ergebnisdetails | |
+| --- | --- |
+| Überwachung der Vitalzeichen | mindestens alle 12 Stunden |
+| AF · SpO₂ · O₂ · syst. RR · HF · Bewusstsein · Temperatur | 0 · 0 · 0 · 0 · 0 · 0 · 0 |
+
+
+### 2
+
+Niedriges bis mittleres Risiko: Ein isolierter Parameter mit 3 Punkten erfordert eine dringende ärztliche Beurteilung
+
+| Ergebnisdetails | |
+| --- | --- |
+| Überwachung der Vitalzeichen | mindestens alle 1 Stunde |
+| AF · SpO₂ · O₂ · syst. RR · HF · Bewusstsein · Temperatur | 0 · 0 · 0 · 0 · 0 · 3 · 0 |
+
+
+### 3
+
+Mittleres klinisches Risiko: dringliche ärztliche Beurteilung
+
+| Ergebnisdetails | |
+| --- | --- |
+| Überwachung der Vitalzeichen | mindestens alle 1 Stunde |
+| AF · SpO₂ · O₂ · syst. RR · HF · Bewusstsein · Temperatur | 2 · 1 · 0 · 1 · 1 · 0 · 1 |
+
+
+### 4
+
+Hohes klinisches Risiko: Notfallreaktion durch das Intensivteam
+
+| Ergebnisdetails | |
+| --- | --- |
+| Überwachung der Vitalzeichen | kontinuierlich |
+| AF · SpO₂ · O₂ · syst. RR · HF · Bewusstsein · Temperatur | 3 · 3 · 2 · 3 · 2 · 3 · 2 |
+
+
+### 5
+
+Niedriges klinisches Risiko: pflegerische Beurteilung
+
+| Ergebnisdetails | |
+| --- | --- |
+| Überwachung der Vitalzeichen | mindestens alle 4 bis 6 Stunden |
+| AF · SpO₂ · O₂ · syst. RR · HF · Bewusstsein · Temperatur | 0 · 0 · 2 · 0 · 0 · 0 · 0 |
+
+SpO₂-Skala 2: nur bei bestätigtem hyperkapnischem Atemversagen verwenden, mit verordnetem Ziel von 88 bis 92 %.
+
+
+### 6
+
+Mittleres klinisches Risiko: dringliche ärztliche Beurteilung
+
+| Ergebnisdetails | |
+| --- | --- |
+| Überwachung der Vitalzeichen | mindestens alle 1 Stunde |
+| AF · SpO₂ · O₂ · syst. RR · HF · Bewusstsein · Temperatur | 0 · 3 · 2 · 0 · 0 · 0 · 0 |
+
+SpO₂-Skala 2: nur bei bestätigtem hyperkapnischem Atemversagen verwenden, mit verordnetem Ziel von 88 bis 92 %.
+

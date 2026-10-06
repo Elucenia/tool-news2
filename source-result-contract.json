@@ -1,0 +1,451 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "news2",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "26bedc514b47685ff765f93a640dafb4b0c4d38f",
+    "oldEngineSha256": "cd9bd3a519b45e17640257c5867c9f7cec02aee37f5eab1ddb6ab7c25f08b1a0",
+    "currentEngineSha256": "9ec0a49cc8e32dfbbf660e4d46e3a0dc1a9c458a5402921a39001a2ad335d0e5"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "Sinais vitais normais: 0",
+      "input": {
+        "fr": 16,
+        "spo2": 97,
+        "escala": "1",
+        "o2": "0",
+        "pas": 125,
+        "fc": 75,
+        "consc": "a",
+        "temp": 36.8
+      },
+      "publicOutput": {
+        "id": "news2",
+        "main": [
+          "0",
+          "pontos"
+        ],
+        "label": "NEWS2",
+        "raw": {
+          "score": 0,
+          "red": 0,
+          "sat": 0
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 0,
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "0",
+          "pontos"
+        ],
+        "label": "NEWS2",
+        "level": "low",
+        "verdict": "Risco clínico baixo",
+        "rows": [
+          [
+            "Monitorização dos sinais vitais",
+            "no mínimo a cada 12 horas"
+          ],
+          [
+            "FR · SpO₂ · O₂ · PAS · FC · consciência · temperatura",
+            "0 · 0 · 0 · 0 · 0 · 0 · 0"
+          ]
+        ],
+        "note": "",
+        "raw": {
+          "score": 0,
+          "red": 0,
+          "sat": 0
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "Confusão nova isolada: 3 pontos em um parâmetro",
+      "input": {
+        "fr": 16,
+        "spo2": 97,
+        "escala": "1",
+        "o2": "0",
+        "pas": 125,
+        "fc": 75,
+        "consc": "cvpu",
+        "temp": 36.8
+      },
+      "publicOutput": {
+        "id": "news2",
+        "main": [
+          "3",
+          "pontos"
+        ],
+        "label": "NEWS2",
+        "raw": {
+          "score": 3,
+          "red": 1,
+          "sat": 0
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 3,
+        "raw": {
+          "red": 1
+        },
+        "level": "mid",
+        "verdict": "baixo-médio"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "3",
+          "pontos"
+        ],
+        "label": "NEWS2",
+        "level": "mid",
+        "verdict": "Risco baixo-médio: um parâmetro isolado com 3 pontos pede avaliação médica urgente",
+        "rows": [
+          [
+            "Monitorização dos sinais vitais",
+            "no mínimo a cada 1 hora"
+          ],
+          [
+            "FR · SpO₂ · O₂ · PAS · FC · consciência · temperatura",
+            "0 · 0 · 0 · 0 · 0 · 3 · 0"
+          ]
+        ],
+        "note": "",
+        "raw": {
+          "score": 3,
+          "red": 1,
+          "sat": 0
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "FR 22 (2), SpO₂ 95 (1), PAS 105 (1), FC 95 (1), T 38,3 (1): 6",
+      "input": {
+        "fr": 22,
+        "spo2": 95,
+        "escala": "1",
+        "o2": "0",
+        "pas": 105,
+        "fc": 95,
+        "consc": "a",
+        "temp": 38.3
+      },
+      "publicOutput": {
+        "id": "news2",
+        "main": [
+          "6",
+          "pontos"
+        ],
+        "label": "NEWS2",
+        "raw": {
+          "score": 6,
+          "red": 0,
+          "sat": 1
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 6,
+        "level": "mid",
+        "verdict": "médio"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "6",
+          "pontos"
+        ],
+        "label": "NEWS2",
+        "level": "mid",
+        "verdict": "Risco clínico médio: avaliação médica urgente",
+        "rows": [
+          [
+            "Monitorização dos sinais vitais",
+            "no mínimo a cada 1 hora"
+          ],
+          [
+            "FR · SpO₂ · O₂ · PAS · FC · consciência · temperatura",
+            "2 · 1 · 0 · 1 · 1 · 0 · 1"
+          ]
+        ],
+        "note": "",
+        "raw": {
+          "score": 6,
+          "red": 0,
+          "sat": 1
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 3,
+      "name": "Choque séptico com O₂: 3+3+2+3+2+3+2 = 18",
+      "input": {
+        "fr": 26,
+        "spo2": 91,
+        "escala": "1",
+        "o2": "1",
+        "pas": 88,
+        "fc": 120,
+        "consc": "cvpu",
+        "temp": 39.5
+      },
+      "publicOutput": {
+        "id": "news2",
+        "main": [
+          "18",
+          "pontos"
+        ],
+        "label": "NEWS2",
+        "raw": {
+          "score": 18,
+          "red": 1,
+          "sat": 3
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 18,
+        "level": "high"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "18",
+          "pontos"
+        ],
+        "label": "NEWS2",
+        "level": "high",
+        "verdict": "Risco clínico alto: resposta de emergência pela equipe de cuidados críticos",
+        "rows": [
+          [
+            "Monitorização dos sinais vitais",
+            "contínua"
+          ],
+          [
+            "FR · SpO₂ · O₂ · PAS · FC · consciência · temperatura",
+            "3 · 3 · 2 · 3 · 2 · 3 · 2"
+          ]
+        ],
+        "note": "",
+        "raw": {
+          "score": 18,
+          "red": 1,
+          "sat": 3
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 4,
+      "name": "DPOC, escala 2, SpO₂ 90% com O₂: só o oxigênio pontua (2)",
+      "input": {
+        "fr": 18,
+        "spo2": 90,
+        "escala": "2",
+        "o2": "1",
+        "pas": 130,
+        "fc": 80,
+        "consc": "a",
+        "temp": 37
+      },
+      "publicOutput": {
+        "id": "news2",
+        "main": [
+          "2",
+          "pontos"
+        ],
+        "label": "NEWS2",
+        "raw": {
+          "score": 2,
+          "red": 0,
+          "sat": 0
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 2,
+        "raw": {
+          "sat": 0
+        },
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "2",
+          "pontos"
+        ],
+        "label": "NEWS2",
+        "level": "low",
+        "verdict": "Risco clínico baixo: avaliação pela enfermagem",
+        "rows": [
+          [
+            "Monitorização dos sinais vitais",
+            "no mínimo a cada 4 a 6 horas"
+          ],
+          [
+            "FR · SpO₂ · O₂ · PAS · FC · consciência · temperatura",
+            "0 · 0 · 2 · 0 · 0 · 0 · 0"
+          ]
+        ],
+        "note": "Escala 2 da SpO₂: use só em insuficiência respiratória hipercápnica confirmada, com alvo de 88 a 92% prescrito.",
+        "raw": {
+          "score": 2,
+          "red": 0,
+          "sat": 0
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 5,
+      "name": "Escala 2, SpO₂ 97% com O₂: 3 pontos na saturação",
+      "input": {
+        "fr": 18,
+        "spo2": 97,
+        "escala": "2",
+        "o2": "1",
+        "pas": 130,
+        "fc": 80,
+        "consc": "a",
+        "temp": 37
+      },
+      "publicOutput": {
+        "id": "news2",
+        "main": [
+          "5",
+          "pontos"
+        ],
+        "label": "NEWS2",
+        "raw": {
+          "score": 5,
+          "red": 1,
+          "sat": 3
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 5,
+        "raw": {
+          "sat": 3
+        },
+        "level": "mid"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "5",
+          "pontos"
+        ],
+        "label": "NEWS2",
+        "level": "mid",
+        "verdict": "Risco clínico médio: avaliação médica urgente",
+        "rows": [
+          [
+            "Monitorização dos sinais vitais",
+            "no mínimo a cada 1 hora"
+          ],
+          [
+            "FR · SpO₂ · O₂ · PAS · FC · consciência · temperatura",
+            "0 · 3 · 2 · 0 · 0 · 0 · 0"
+          ]
+        ],
+        "note": "Escala 2 da SpO₂: use só em insuficiência respiratória hipercápnica confirmada, com alvo de 88 a 92% prescrito.",
+        "raw": {
+          "score": 5,
+          "red": 1,
+          "sat": 3
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ]
+    }
+  ]
+}

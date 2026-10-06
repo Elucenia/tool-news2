@@ -126,3 +126,71 @@ Risultato della formula o classificazione. Interpretazione, condotta e applicabi
 Apache-2.0 si applica solo al codice di ELUCENIA. I diritti su strumenti, pubblicazioni, traduzioni e dati restano ai rispettivi titolari. Conservi LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Risultati documentati
+
+Le informazioni seguenti conservano gli output del metodo per esempi sintetici. Non costituiscono una validazione clinica indipendente.
+
+### 1
+
+Rischio clinico basso
+
+| Dettagli del risultato | |
+| --- | --- |
+| Monitoraggio dei segni vitali | almeno ogni 12 ore |
+| FR · SpO₂ · O₂ · PAS · FC · coscienza · temperatura | 0 · 0 · 0 · 0 · 0 · 0 · 0 |
+
+
+### 2
+
+Rischio basso-medio: un parametro isolato con 3 punti richiede una valutazione medica urgente
+
+| Dettagli del risultato | |
+| --- | --- |
+| Monitoraggio dei segni vitali | almeno ogni 1 ora |
+| FR · SpO₂ · O₂ · PAS · FC · coscienza · temperatura | 0 · 0 · 0 · 0 · 0 · 3 · 0 |
+
+
+### 3
+
+Rischio clinico medio: valutazione medica urgente
+
+| Dettagli del risultato | |
+| --- | --- |
+| Monitoraggio dei segni vitali | almeno ogni 1 ora |
+| FR · SpO₂ · O₂ · PAS · FC · coscienza · temperatura | 2 · 1 · 0 · 1 · 1 · 0 · 1 |
+
+
+### 4
+
+Rischio clinico alto: risposta d’emergenza da parte del team di terapia intensiva
+
+| Dettagli del risultato | |
+| --- | --- |
+| Monitoraggio dei segni vitali | continua |
+| FR · SpO₂ · O₂ · PAS · FC · coscienza · temperatura | 3 · 3 · 2 · 3 · 2 · 3 · 2 |
+
+
+### 5
+
+Rischio clinico basso: valutazione infermieristica
+
+| Dettagli del risultato | |
+| --- | --- |
+| Monitoraggio dei segni vitali | almeno ogni 4 o 6 ore |
+| FR · SpO₂ · O₂ · PAS · FC · coscienza · temperatura | 0 · 0 · 2 · 0 · 0 · 0 · 0 |
+
+Scala 2 di SpO₂: usare solo in insufficienza respiratoria ipercapnica confermata, con target prescritto 88-92%.
+
+
+### 6
+
+Rischio clinico medio: valutazione medica urgente
+
+| Dettagli del risultato | |
+| --- | --- |
+| Monitoraggio dei segni vitali | almeno ogni 1 ora |
+| FR · SpO₂ · O₂ · PAS · FC · coscienza · temperatura | 0 · 3 · 2 · 0 · 0 · 0 · 0 |
+
+Scala 2 di SpO₂: usare solo in insufficienza respiratoria ipercapnica confermata, con target prescritto 88-92%.
+

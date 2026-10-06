@@ -126,3 +126,71 @@ Résultat de la formule ou de la classification. L’interprétation, la conduit
 Apache-2.0 s’applique uniquement au code d’ELUCENIA. Les droits sur les instruments, publications, traductions et données restent ceux de leurs titulaires respectifs. Conservez LICENSE et NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Résultats documentés
+
+Les informations ci-dessous conservent les sorties de la méthode pour des exemples synthétiques. Elles ne constituent pas une validation clinique indépendante.
+
+### 1
+
+Risque clinique faible
+
+| Détails du résultat | |
+| --- | --- |
+| Surveillance des signes vitaux | au moins toutes les 12 heures |
+| FR · SpO₂ · O₂ · PAS · FC · conscience · température | 0 · 0 · 0 · 0 · 0 · 0 · 0 |
+
+
+### 2
+
+Risque faible à modéré : un paramètre isolé à 3 points nécessite une évaluation médicale urgente
+
+| Détails du résultat | |
+| --- | --- |
+| Surveillance des signes vitaux | au minimum toutes les 1 heure |
+| FR · SpO₂ · O₂ · PAS · FC · conscience · température | 0 · 0 · 0 · 0 · 0 · 3 · 0 |
+
+
+### 3
+
+Risque clinique modéré : évaluation médicale urgente
+
+| Détails du résultat | |
+| --- | --- |
+| Surveillance des signes vitaux | au minimum toutes les 1 heure |
+| FR · SpO₂ · O₂ · PAS · FC · conscience · température | 2 · 1 · 0 · 1 · 1 · 0 · 1 |
+
+
+### 4
+
+Risque clinique élevé : intervention d’urgence par l’équipe de soins intensifs
+
+| Détails du résultat | |
+| --- | --- |
+| Surveillance des signes vitaux | continue |
+| FR · SpO₂ · O₂ · PAS · FC · conscience · température | 3 · 3 · 2 · 3 · 2 · 3 · 2 |
+
+
+### 5
+
+Risque clinique faible : évaluation infirmière
+
+| Détails du résultat | |
+| --- | --- |
+| Surveillance des signes vitaux | au minimum toutes les 4 à 6 heures |
+| FR · SpO₂ · O₂ · PAS · FC · conscience · température | 0 · 0 · 2 · 0 · 0 · 0 · 0 |
+
+Échelle 2 de SpO₂ : à utiliser uniquement en cas d’insuffisance respiratoire hypercapnique confirmée, avec une cible prescrite de 88 à 92 %.
+
+
+### 6
+
+Risque clinique modéré : évaluation médicale urgente
+
+| Détails du résultat | |
+| --- | --- |
+| Surveillance des signes vitaux | au minimum toutes les 1 heure |
+| FR · SpO₂ · O₂ · PAS · FC · conscience · température | 0 · 3 · 2 · 0 · 0 · 0 · 0 |
+
+Échelle 2 de SpO₂ : à utiliser uniquement en cas d’insuffisance respiratoire hypercapnique confirmée, avec une cible prescrite de 88 à 92 %.
+

@@ -333,7 +333,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "NEWS 2/Royal Collegeof Physicians December 2017:6 parâmetros,2 escalas Sp O 2,+2 oxigênio; sem NEWS 2012",
-    "implementationVersion": "news2@native-2026-10-04+cd9bd3a519b4",
+    "implementationVersion": "news2@native-2026-10-05+9ec0a49cc8e3",
     "currentMethodSource": "https://www.rcp.ac.uk/improving-care/resources/national-early-warning-score-news-2/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -566,7 +566,7 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "cd9bd3a519b45e17640257c5867c9f7cec02aee37f5eab1ddb6ab7c25f08b1a0",
+      "implementationHash": "9ec0a49cc8e32dfbbf660e4d46e3a0dc1a9c458a5402921a39001a2ad335d0e5",
       "previousImplementationHash": "03adc169ad4266f6f67f08e599fb6a3a8ca96427a2b617dc73d869ce0816cc62",
       "previousInputContract": {
         "fields": [
@@ -760,8 +760,34 @@
           "professionalLanguageApproval": "not-performed",
           "sourceRightsApproval": "not-performed",
           "scope": "Declarative technical rebinding only. Source access scope, source proofs and original failure/test histories remain unchanged."
+        },
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "news2@native-2026-10-04+cd9bd3a519b4",
+          "previousImplementationHash": "cd9bd3a519b45e17640257c5867c9f7cec02aee37f5eab1ddb6ab7c25f08b1a0",
+          "implementationHash": "9ec0a49cc8e32dfbbf660e4d46e3a0dc1a9c458a5402921a39001a2ad335d0e5",
+          "scientificBodySha256": "8249eded51b6ac3285d066cad553726eb092d380d6094c8094360047abe4bca1",
+          "metadataContractHash": "41c5b7066ebea6c7acfdd1f43bf5e969cd7752e76ffe19c83e026f7097f059f7",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
         }
-      ]
+      ],
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      }
     },
     "limits": "NEWS2 destina-se à avaliação de pessoas com 16 anos ou mais; não deve ser usado como escore validado em menores de 16 anos ou gestantes. Use a escala de SpO₂ 2 somente em insuficiência respiratória hipercápnica confirmada por gasometria na admissão atual ou anterior, com alvo de saturação de 88–92% prescrito e decisão de profissional clínico competente registrada. Nas demais situações, use a escala 1. O total apoia a avaliação de deterioração e não gera uma ordem assistencial automática.",
     "limitsEvidence": {
@@ -793,15 +819,15 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/news2/calculator.js",
-    "bytes": 6323,
-    "sha256": "cd9bd3a519b45e17640257c5867c9f7cec02aee37f5eab1ddb6ab7c25f08b1a0"
+    "bytes": 6528,
+    "sha256": "9ec0a49cc8e32dfbbf660e4d46e3a0dc1a9c458a5402921a39001a2ad335d0e5"
   },
-  "sourceToolSha256": "a7a3feaea98f1ae88ebdfee92ac10d3e8520f4c7a3d0494c71a46e804ccf5dd8",
+  "sourceToolSha256": "07e38079e4b889dd43a5abafbf8a176f87984916d715a7c6865b3ee1aeeffa08",
   "omittedFullReferenceBanks": [
     {
       "rows": 907,
       "sha256": "c3e7779e483a0069c862ad3381fb238d5a246a690d010733323c8c5df0e2ebf2",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

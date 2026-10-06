@@ -126,3 +126,71 @@ Resultado de la fórmula o clasificación. La interpretación, la conducta y la 
 Apache-2.0 se aplica únicamente al código de ELUCENIA. Los derechos de los instrumentos, publicaciones, traducciones y datos permanecen en manos de sus respectivos titulares. Conserve LICENSE y NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+La información siguiente conserva las salidas del método para ejemplos sintéticos. No constituye una validación clínica independiente.
+
+### 1
+
+Riesgo clínico bajo
+
+| Detalles del resultado | |
+| --- | --- |
+| Monitorización de los signos vitales | como mínimo cada 12 horas |
+| FR · SpO₂ · O₂ · PAS · FC · conciencia · temperatura | 0 · 0 · 0 · 0 · 0 · 0 · 0 |
+
+
+### 2
+
+Riesgo bajo-medio: un parámetro aislado con 3 puntos requiere evaluación médica urgente
+
+| Detalles del resultado | |
+| --- | --- |
+| Monitorización de los signos vitales | como mínimo cada 1 hora |
+| FR · SpO₂ · O₂ · PAS · FC · conciencia · temperatura | 0 · 0 · 0 · 0 · 0 · 3 · 0 |
+
+
+### 3
+
+Riesgo clínico medio: evaluación médica urgente
+
+| Detalles del resultado | |
+| --- | --- |
+| Monitorización de los signos vitales | como mínimo cada 1 hora |
+| FR · SpO₂ · O₂ · PAS · FC · conciencia · temperatura | 2 · 1 · 0 · 1 · 1 · 0 · 1 |
+
+
+### 4
+
+Riesgo clínico alto: respuesta de emergencia del equipo de cuidados críticos
+
+| Detalles del resultado | |
+| --- | --- |
+| Monitorización de los signos vitales | continua |
+| FR · SpO₂ · O₂ · PAS · FC · conciencia · temperatura | 3 · 3 · 2 · 3 · 2 · 3 · 2 |
+
+
+### 5
+
+Riesgo clínico bajo: valoración de enfermería
+
+| Detalles del resultado | |
+| --- | --- |
+| Monitorización de los signos vitales | como mínimo cada 4 a 6 horas |
+| FR · SpO₂ · O₂ · PAS · FC · conciencia · temperatura | 0 · 0 · 2 · 0 · 0 · 0 · 0 |
+
+Escala 2 de SpO₂: usar solo en insuficiencia respiratoria hipercápnica confirmada, con objetivo prescrito de 88 a 92%.
+
+
+### 6
+
+Riesgo clínico medio: evaluación médica urgente
+
+| Detalles del resultado | |
+| --- | --- |
+| Monitorización de los signos vitales | como mínimo cada 1 hora |
+| FR · SpO₂ · O₂ · PAS · FC · conciencia · temperatura | 0 · 3 · 2 · 0 · 0 · 0 · 0 |
+
+Escala 2 de SpO₂: usar solo en insuficiencia respiratoria hipercápnica confirmada, con objetivo prescrito de 88 a 92%.
+

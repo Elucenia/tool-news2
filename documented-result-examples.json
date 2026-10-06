@@ -1,0 +1,2953 @@
+{
+  "id": "news2",
+  "implementationVersion": "news2@native-2026-10-05+9ec0a49cc8e3",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Sinais vitais normais: 0",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Monitorização dos sinais vitais",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "no mínimo a cada 12 horas",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "FR · SpO₂ · O₂ · PAS · FC · consciência · temperatura",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0 · 0 · 0 · 0 · 0 · 0 · 0",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Risco clínico baixo",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Confusão nova isolada: 3 pontos em um parâmetro",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Monitorização dos sinais vitais",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "no mínimo a cada 1 hora",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "FR · SpO₂ · O₂ · PAS · FC · consciência · temperatura",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0 · 0 · 0 · 0 · 0 · 3 · 0",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Risco baixo-médio: um parâmetro isolado com 3 pontos pede avaliação médica urgente",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "FR 22 (2), SpO₂ 95 (1), PAS 105 (1), FC 95 (1), T 38,3 (1): 6",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Monitorização dos sinais vitais",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "no mínimo a cada 1 hora",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "FR · SpO₂ · O₂ · PAS · FC · consciência · temperatura",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "2 · 1 · 0 · 1 · 1 · 0 · 1",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Risco clínico médio: avaliação médica urgente",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Choque séptico com O₂: 3+3+2+3+2+3+2 = 18",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Monitorização dos sinais vitais",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "contínua",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "FR · SpO₂ · O₂ · PAS · FC · consciência · temperatura",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "3 · 3 · 2 · 3 · 2 · 3 · 2",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Risco clínico alto: resposta de emergência pela equipe de cuidados críticos",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "DPOC, escala 2, SpO₂ 90% com O₂: só o oxigênio pontua (2)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Monitorização dos sinais vitais",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "no mínimo a cada 4 a 6 horas",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "FR · SpO₂ · O₂ · PAS · FC · consciência · temperatura",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0 · 0 · 2 · 0 · 0 · 0 · 0",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Risco clínico baixo: avaliação pela enfermagem",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Escala 2 da SpO₂: use só em insuficiência respiratória hipercápnica confirmada, com alvo de 88 a 92% prescrito.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Escala 2, SpO₂ 97% com O₂: 3 pontos na saturação",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Monitorização dos sinais vitais",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "no mínimo a cada 1 hora",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "FR · SpO₂ · O₂ · PAS · FC · consciência · temperatura",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0 · 3 · 2 · 0 · 0 · 0 · 0",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Risco clínico médio: avaliação médica urgente",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Escala 2 da SpO₂: use só em insuficiência respiratória hipercápnica confirmada, com alvo de 88 a 92% prescrito.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Sinais vitais normais: 0",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Monitoring of vital signs",
+                "locale": "en",
+                "template": "documented-authored-02dfee141d1437c9f319"
+              },
+              "value": {
+                "text": "at least every 12 hours",
+                "locale": "en",
+                "template": "documented-authored-264e47d2b753d52ccc59"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "RR · SpO₂ · O₂ · SBP · HR · consciousness · temperature",
+                "locale": "en",
+                "template": "documented-authored-31e6732a3546beeb7f4a"
+              },
+              "value": {
+                "text": "0 · 0 · 0 · 0 · 0 · 0 · 0",
+                "locale": "en",
+                "template": "documented-authored-b4c230fc98ce91140082",
+                "sourceNumbers": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Low clinical risk",
+            "locale": "en",
+            "template": "documented-authored-31b383f46a28ec955797"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Confusão nova isolada: 3 pontos em um parâmetro",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Monitoring of vital signs",
+                "locale": "en",
+                "template": "documented-authored-02dfee141d1437c9f319"
+              },
+              "value": {
+                "text": "at least every 1 hour",
+                "locale": "en",
+                "template": "documented-authored-c7f985dd0802b01b1762"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "RR · SpO₂ · O₂ · SBP · HR · consciousness · temperature",
+                "locale": "en",
+                "template": "documented-authored-31e6732a3546beeb7f4a"
+              },
+              "value": {
+                "text": "0 · 0 · 0 · 0 · 0 · 3 · 0",
+                "locale": "en",
+                "template": "documented-authored-b4c230fc98ce91140082",
+                "sourceNumbers": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  3,
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Low-to-medium risk: one isolated parameter with 3 points calls for urgent medical assessment",
+            "locale": "en",
+            "template": "documented-authored-b7a56cc0814f1b926b12"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "FR 22 (2), SpO₂ 95 (1), PAS 105 (1), FC 95 (1), T 38,3 (1): 6",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Monitoring of vital signs",
+                "locale": "en",
+                "template": "documented-authored-02dfee141d1437c9f319"
+              },
+              "value": {
+                "text": "at least every 1 hour",
+                "locale": "en",
+                "template": "documented-authored-c7f985dd0802b01b1762"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "RR · SpO₂ · O₂ · SBP · HR · consciousness · temperature",
+                "locale": "en",
+                "template": "documented-authored-31e6732a3546beeb7f4a"
+              },
+              "value": {
+                "text": "2 · 1 · 0 · 1 · 1 · 0 · 1",
+                "locale": "en",
+                "template": "documented-authored-b4c230fc98ce91140082",
+                "sourceNumbers": [
+                  2,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Medium clinical risk: urgent medical assessment",
+            "locale": "en",
+            "template": "documented-authored-a3b8871e8479ed1641ff"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Choque séptico com O₂: 3+3+2+3+2+3+2 = 18",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Monitoring of vital signs",
+                "locale": "en",
+                "template": "documented-authored-02dfee141d1437c9f319"
+              },
+              "value": {
+                "text": "continuous",
+                "locale": "en",
+                "template": "documented-authored-2150c6ff8cdb3ed6a13d"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "RR · SpO₂ · O₂ · SBP · HR · consciousness · temperature",
+                "locale": "en",
+                "template": "documented-authored-31e6732a3546beeb7f4a"
+              },
+              "value": {
+                "text": "3 · 3 · 2 · 3 · 2 · 3 · 2",
+                "locale": "en",
+                "template": "documented-authored-b4c230fc98ce91140082",
+                "sourceNumbers": [
+                  3,
+                  3,
+                  2,
+                  3,
+                  2,
+                  3,
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "High clinical risk: emergency response by the critical care team",
+            "locale": "en",
+            "template": "documented-authored-bd623d4b93cc9a9e10bf"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "DPOC, escala 2, SpO₂ 90% com O₂: só o oxigênio pontua (2)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Monitoring of vital signs",
+                "locale": "en",
+                "template": "documented-authored-02dfee141d1437c9f319"
+              },
+              "value": {
+                "text": "at least every 4 to 6 hours",
+                "locale": "en",
+                "template": "documented-authored-43d3ee42aa80ec5efaa6"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "RR · SpO₂ · O₂ · SBP · HR · consciousness · temperature",
+                "locale": "en",
+                "template": "documented-authored-31e6732a3546beeb7f4a"
+              },
+              "value": {
+                "text": "0 · 0 · 2 · 0 · 0 · 0 · 0",
+                "locale": "en",
+                "template": "documented-authored-b4c230fc98ce91140082",
+                "sourceNumbers": [
+                  0,
+                  0,
+                  2,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Low clinical risk: nursing assessment",
+            "locale": "en",
+            "template": "documented-authored-2ce0684de3c4a79631b3"
+          },
+          "note": {
+            "text": "SpO₂ scale 2: use only in confirmed hypercapnic respiratory failure, with prescribed target 88 to 92%.",
+            "locale": "en",
+            "template": "documented-authored-f8aba073bff379373c5e"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Escala 2, SpO₂ 97% com O₂: 3 pontos na saturação",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Monitoring of vital signs",
+                "locale": "en",
+                "template": "documented-authored-02dfee141d1437c9f319"
+              },
+              "value": {
+                "text": "at least every 1 hour",
+                "locale": "en",
+                "template": "documented-authored-c7f985dd0802b01b1762"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "RR · SpO₂ · O₂ · SBP · HR · consciousness · temperature",
+                "locale": "en",
+                "template": "documented-authored-31e6732a3546beeb7f4a"
+              },
+              "value": {
+                "text": "0 · 3 · 2 · 0 · 0 · 0 · 0",
+                "locale": "en",
+                "template": "documented-authored-b4c230fc98ce91140082",
+                "sourceNumbers": [
+                  0,
+                  3,
+                  2,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Medium clinical risk: urgent medical assessment",
+            "locale": "en",
+            "template": "documented-authored-a3b8871e8479ed1641ff"
+          },
+          "note": {
+            "text": "SpO₂ scale 2: use only in confirmed hypercapnic respiratory failure, with prescribed target 88 to 92%.",
+            "locale": "en",
+            "template": "documented-authored-f8aba073bff379373c5e"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Sinais vitais normais: 0",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Monitorización de los signos vitales",
+                "locale": "es",
+                "template": "documented-authored-02dfee141d1437c9f319"
+              },
+              "value": {
+                "text": "como mínimo cada 12 horas",
+                "locale": "es",
+                "template": "documented-authored-264e47d2b753d52ccc59"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "FR · SpO₂ · O₂ · PAS · FC · conciencia · temperatura",
+                "locale": "es",
+                "template": "documented-authored-31e6732a3546beeb7f4a"
+              },
+              "value": {
+                "text": "0 · 0 · 0 · 0 · 0 · 0 · 0",
+                "locale": "es",
+                "template": "documented-authored-b4c230fc98ce91140082",
+                "sourceNumbers": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Riesgo clínico bajo",
+            "locale": "es",
+            "template": "documented-authored-31b383f46a28ec955797"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Confusão nova isolada: 3 pontos em um parâmetro",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Monitorización de los signos vitales",
+                "locale": "es",
+                "template": "documented-authored-02dfee141d1437c9f319"
+              },
+              "value": {
+                "text": "como mínimo cada 1 hora",
+                "locale": "es",
+                "template": "documented-authored-c7f985dd0802b01b1762"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "FR · SpO₂ · O₂ · PAS · FC · conciencia · temperatura",
+                "locale": "es",
+                "template": "documented-authored-31e6732a3546beeb7f4a"
+              },
+              "value": {
+                "text": "0 · 0 · 0 · 0 · 0 · 3 · 0",
+                "locale": "es",
+                "template": "documented-authored-b4c230fc98ce91140082",
+                "sourceNumbers": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  3,
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Riesgo bajo-medio: un parámetro aislado con 3 puntos requiere evaluación médica urgente",
+            "locale": "es",
+            "template": "documented-authored-b7a56cc0814f1b926b12"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "FR 22 (2), SpO₂ 95 (1), PAS 105 (1), FC 95 (1), T 38,3 (1): 6",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Monitorización de los signos vitales",
+                "locale": "es",
+                "template": "documented-authored-02dfee141d1437c9f319"
+              },
+              "value": {
+                "text": "como mínimo cada 1 hora",
+                "locale": "es",
+                "template": "documented-authored-c7f985dd0802b01b1762"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "FR · SpO₂ · O₂ · PAS · FC · conciencia · temperatura",
+                "locale": "es",
+                "template": "documented-authored-31e6732a3546beeb7f4a"
+              },
+              "value": {
+                "text": "2 · 1 · 0 · 1 · 1 · 0 · 1",
+                "locale": "es",
+                "template": "documented-authored-b4c230fc98ce91140082",
+                "sourceNumbers": [
+                  2,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Riesgo clínico medio: evaluación médica urgente",
+            "locale": "es",
+            "template": "documented-authored-a3b8871e8479ed1641ff"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Choque séptico com O₂: 3+3+2+3+2+3+2 = 18",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Monitorización de los signos vitales",
+                "locale": "es",
+                "template": "documented-authored-02dfee141d1437c9f319"
+              },
+              "value": {
+                "text": "continua",
+                "locale": "es",
+                "template": "documented-authored-2150c6ff8cdb3ed6a13d"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "FR · SpO₂ · O₂ · PAS · FC · conciencia · temperatura",
+                "locale": "es",
+                "template": "documented-authored-31e6732a3546beeb7f4a"
+              },
+              "value": {
+                "text": "3 · 3 · 2 · 3 · 2 · 3 · 2",
+                "locale": "es",
+                "template": "documented-authored-b4c230fc98ce91140082",
+                "sourceNumbers": [
+                  3,
+                  3,
+                  2,
+                  3,
+                  2,
+                  3,
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Riesgo clínico alto: respuesta de emergencia del equipo de cuidados críticos",
+            "locale": "es",
+            "template": "documented-authored-bd623d4b93cc9a9e10bf"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "DPOC, escala 2, SpO₂ 90% com O₂: só o oxigênio pontua (2)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Monitorización de los signos vitales",
+                "locale": "es",
+                "template": "documented-authored-02dfee141d1437c9f319"
+              },
+              "value": {
+                "text": "como mínimo cada 4 a 6 horas",
+                "locale": "es",
+                "template": "documented-authored-43d3ee42aa80ec5efaa6"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "FR · SpO₂ · O₂ · PAS · FC · conciencia · temperatura",
+                "locale": "es",
+                "template": "documented-authored-31e6732a3546beeb7f4a"
+              },
+              "value": {
+                "text": "0 · 0 · 2 · 0 · 0 · 0 · 0",
+                "locale": "es",
+                "template": "documented-authored-b4c230fc98ce91140082",
+                "sourceNumbers": [
+                  0,
+                  0,
+                  2,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Riesgo clínico bajo: valoración de enfermería",
+            "locale": "es",
+            "template": "documented-authored-2ce0684de3c4a79631b3"
+          },
+          "note": {
+            "text": "Escala 2 de SpO₂: usar solo en insuficiencia respiratoria hipercápnica confirmada, con objetivo prescrito de 88 a 92%.",
+            "locale": "es",
+            "template": "documented-authored-f8aba073bff379373c5e"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Escala 2, SpO₂ 97% com O₂: 3 pontos na saturação",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Monitorización de los signos vitales",
+                "locale": "es",
+                "template": "documented-authored-02dfee141d1437c9f319"
+              },
+              "value": {
+                "text": "como mínimo cada 1 hora",
+                "locale": "es",
+                "template": "documented-authored-c7f985dd0802b01b1762"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "FR · SpO₂ · O₂ · PAS · FC · conciencia · temperatura",
+                "locale": "es",
+                "template": "documented-authored-31e6732a3546beeb7f4a"
+              },
+              "value": {
+                "text": "0 · 3 · 2 · 0 · 0 · 0 · 0",
+                "locale": "es",
+                "template": "documented-authored-b4c230fc98ce91140082",
+                "sourceNumbers": [
+                  0,
+                  3,
+                  2,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Riesgo clínico medio: evaluación médica urgente",
+            "locale": "es",
+            "template": "documented-authored-a3b8871e8479ed1641ff"
+          },
+          "note": {
+            "text": "Escala 2 de SpO₂: usar solo en insuficiencia respiratoria hipercápnica confirmada, con objetivo prescrito de 88 a 92%.",
+            "locale": "es",
+            "template": "documented-authored-f8aba073bff379373c5e"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Sinais vitais normais: 0",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Surveillance des signes vitaux",
+                "locale": "fr",
+                "template": "documented-authored-02dfee141d1437c9f319"
+              },
+              "value": {
+                "text": "au moins toutes les 12 heures",
+                "locale": "fr",
+                "template": "documented-authored-264e47d2b753d52ccc59"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "FR · SpO₂ · O₂ · PAS · FC · conscience · température",
+                "locale": "fr",
+                "template": "documented-authored-31e6732a3546beeb7f4a"
+              },
+              "value": {
+                "text": "0 · 0 · 0 · 0 · 0 · 0 · 0",
+                "locale": "fr",
+                "template": "documented-authored-b4c230fc98ce91140082",
+                "sourceNumbers": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Risque clinique faible",
+            "locale": "fr",
+            "template": "documented-authored-31b383f46a28ec955797"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Confusão nova isolada: 3 pontos em um parâmetro",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Surveillance des signes vitaux",
+                "locale": "fr",
+                "template": "documented-authored-02dfee141d1437c9f319"
+              },
+              "value": {
+                "text": "au minimum toutes les 1 heure",
+                "locale": "fr",
+                "template": "documented-authored-c7f985dd0802b01b1762"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "FR · SpO₂ · O₂ · PAS · FC · conscience · température",
+                "locale": "fr",
+                "template": "documented-authored-31e6732a3546beeb7f4a"
+              },
+              "value": {
+                "text": "0 · 0 · 0 · 0 · 0 · 3 · 0",
+                "locale": "fr",
+                "template": "documented-authored-b4c230fc98ce91140082",
+                "sourceNumbers": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  3,
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Risque faible à modéré : un paramètre isolé à 3 points nécessite une évaluation médicale urgente",
+            "locale": "fr",
+            "template": "documented-authored-b7a56cc0814f1b926b12"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "FR 22 (2), SpO₂ 95 (1), PAS 105 (1), FC 95 (1), T 38,3 (1): 6",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Surveillance des signes vitaux",
+                "locale": "fr",
+                "template": "documented-authored-02dfee141d1437c9f319"
+              },
+              "value": {
+                "text": "au minimum toutes les 1 heure",
+                "locale": "fr",
+                "template": "documented-authored-c7f985dd0802b01b1762"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "FR · SpO₂ · O₂ · PAS · FC · conscience · température",
+                "locale": "fr",
+                "template": "documented-authored-31e6732a3546beeb7f4a"
+              },
+              "value": {
+                "text": "2 · 1 · 0 · 1 · 1 · 0 · 1",
+                "locale": "fr",
+                "template": "documented-authored-b4c230fc98ce91140082",
+                "sourceNumbers": [
+                  2,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Risque clinique modéré : évaluation médicale urgente",
+            "locale": "fr",
+            "template": "documented-authored-a3b8871e8479ed1641ff"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Choque séptico com O₂: 3+3+2+3+2+3+2 = 18",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Surveillance des signes vitaux",
+                "locale": "fr",
+                "template": "documented-authored-02dfee141d1437c9f319"
+              },
+              "value": {
+                "text": "continue",
+                "locale": "fr",
+                "template": "documented-authored-2150c6ff8cdb3ed6a13d"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "FR · SpO₂ · O₂ · PAS · FC · conscience · température",
+                "locale": "fr",
+                "template": "documented-authored-31e6732a3546beeb7f4a"
+              },
+              "value": {
+                "text": "3 · 3 · 2 · 3 · 2 · 3 · 2",
+                "locale": "fr",
+                "template": "documented-authored-b4c230fc98ce91140082",
+                "sourceNumbers": [
+                  3,
+                  3,
+                  2,
+                  3,
+                  2,
+                  3,
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Risque clinique élevé : intervention d’urgence par l’équipe de soins intensifs",
+            "locale": "fr",
+            "template": "documented-authored-bd623d4b93cc9a9e10bf"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "DPOC, escala 2, SpO₂ 90% com O₂: só o oxigênio pontua (2)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Surveillance des signes vitaux",
+                "locale": "fr",
+                "template": "documented-authored-02dfee141d1437c9f319"
+              },
+              "value": {
+                "text": "au minimum toutes les 4 à 6 heures",
+                "locale": "fr",
+                "template": "documented-authored-43d3ee42aa80ec5efaa6"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "FR · SpO₂ · O₂ · PAS · FC · conscience · température",
+                "locale": "fr",
+                "template": "documented-authored-31e6732a3546beeb7f4a"
+              },
+              "value": {
+                "text": "0 · 0 · 2 · 0 · 0 · 0 · 0",
+                "locale": "fr",
+                "template": "documented-authored-b4c230fc98ce91140082",
+                "sourceNumbers": [
+                  0,
+                  0,
+                  2,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Risque clinique faible : évaluation infirmière",
+            "locale": "fr",
+            "template": "documented-authored-2ce0684de3c4a79631b3"
+          },
+          "note": {
+            "text": "Échelle 2 de SpO₂ : à utiliser uniquement en cas d’insuffisance respiratoire hypercapnique confirmée, avec une cible prescrite de 88 à 92 %.",
+            "locale": "fr",
+            "template": "documented-authored-f8aba073bff379373c5e"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Escala 2, SpO₂ 97% com O₂: 3 pontos na saturação",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Surveillance des signes vitaux",
+                "locale": "fr",
+                "template": "documented-authored-02dfee141d1437c9f319"
+              },
+              "value": {
+                "text": "au minimum toutes les 1 heure",
+                "locale": "fr",
+                "template": "documented-authored-c7f985dd0802b01b1762"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "FR · SpO₂ · O₂ · PAS · FC · conscience · température",
+                "locale": "fr",
+                "template": "documented-authored-31e6732a3546beeb7f4a"
+              },
+              "value": {
+                "text": "0 · 3 · 2 · 0 · 0 · 0 · 0",
+                "locale": "fr",
+                "template": "documented-authored-b4c230fc98ce91140082",
+                "sourceNumbers": [
+                  0,
+                  3,
+                  2,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Risque clinique modéré : évaluation médicale urgente",
+            "locale": "fr",
+            "template": "documented-authored-a3b8871e8479ed1641ff"
+          },
+          "note": {
+            "text": "Échelle 2 de SpO₂ : à utiliser uniquement en cas d’insuffisance respiratoire hypercapnique confirmée, avec une cible prescrite de 88 à 92 %.",
+            "locale": "fr",
+            "template": "documented-authored-f8aba073bff379373c5e"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Sinais vitais normais: 0",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Überwachung der Vitalzeichen",
+                "locale": "de",
+                "template": "documented-authored-02dfee141d1437c9f319"
+              },
+              "value": {
+                "text": "mindestens alle 12 Stunden",
+                "locale": "de",
+                "template": "documented-authored-264e47d2b753d52ccc59"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "AF · SpO₂ · O₂ · syst. RR · HF · Bewusstsein · Temperatur",
+                "locale": "de",
+                "template": "documented-authored-31e6732a3546beeb7f4a"
+              },
+              "value": {
+                "text": "0 · 0 · 0 · 0 · 0 · 0 · 0",
+                "locale": "de",
+                "template": "documented-authored-b4c230fc98ce91140082",
+                "sourceNumbers": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Niedriges klinisches Risiko",
+            "locale": "de",
+            "template": "documented-authored-31b383f46a28ec955797"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Confusão nova isolada: 3 pontos em um parâmetro",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Überwachung der Vitalzeichen",
+                "locale": "de",
+                "template": "documented-authored-02dfee141d1437c9f319"
+              },
+              "value": {
+                "text": "mindestens alle 1 Stunde",
+                "locale": "de",
+                "template": "documented-authored-c7f985dd0802b01b1762"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "AF · SpO₂ · O₂ · syst. RR · HF · Bewusstsein · Temperatur",
+                "locale": "de",
+                "template": "documented-authored-31e6732a3546beeb7f4a"
+              },
+              "value": {
+                "text": "0 · 0 · 0 · 0 · 0 · 3 · 0",
+                "locale": "de",
+                "template": "documented-authored-b4c230fc98ce91140082",
+                "sourceNumbers": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  3,
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Niedriges bis mittleres Risiko: Ein isolierter Parameter mit 3 Punkten erfordert eine dringende ärztliche Beurteilung",
+            "locale": "de",
+            "template": "documented-authored-b7a56cc0814f1b926b12"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "FR 22 (2), SpO₂ 95 (1), PAS 105 (1), FC 95 (1), T 38,3 (1): 6",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Überwachung der Vitalzeichen",
+                "locale": "de",
+                "template": "documented-authored-02dfee141d1437c9f319"
+              },
+              "value": {
+                "text": "mindestens alle 1 Stunde",
+                "locale": "de",
+                "template": "documented-authored-c7f985dd0802b01b1762"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "AF · SpO₂ · O₂ · syst. RR · HF · Bewusstsein · Temperatur",
+                "locale": "de",
+                "template": "documented-authored-31e6732a3546beeb7f4a"
+              },
+              "value": {
+                "text": "2 · 1 · 0 · 1 · 1 · 0 · 1",
+                "locale": "de",
+                "template": "documented-authored-b4c230fc98ce91140082",
+                "sourceNumbers": [
+                  2,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Mittleres klinisches Risiko: dringliche ärztliche Beurteilung",
+            "locale": "de",
+            "template": "documented-authored-a3b8871e8479ed1641ff"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Choque séptico com O₂: 3+3+2+3+2+3+2 = 18",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Überwachung der Vitalzeichen",
+                "locale": "de",
+                "template": "documented-authored-02dfee141d1437c9f319"
+              },
+              "value": {
+                "text": "kontinuierlich",
+                "locale": "de",
+                "template": "documented-authored-2150c6ff8cdb3ed6a13d"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "AF · SpO₂ · O₂ · syst. RR · HF · Bewusstsein · Temperatur",
+                "locale": "de",
+                "template": "documented-authored-31e6732a3546beeb7f4a"
+              },
+              "value": {
+                "text": "3 · 3 · 2 · 3 · 2 · 3 · 2",
+                "locale": "de",
+                "template": "documented-authored-b4c230fc98ce91140082",
+                "sourceNumbers": [
+                  3,
+                  3,
+                  2,
+                  3,
+                  2,
+                  3,
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Hohes klinisches Risiko: Notfallreaktion durch das Intensivteam",
+            "locale": "de",
+            "template": "documented-authored-bd623d4b93cc9a9e10bf"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "DPOC, escala 2, SpO₂ 90% com O₂: só o oxigênio pontua (2)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Überwachung der Vitalzeichen",
+                "locale": "de",
+                "template": "documented-authored-02dfee141d1437c9f319"
+              },
+              "value": {
+                "text": "mindestens alle 4 bis 6 Stunden",
+                "locale": "de",
+                "template": "documented-authored-43d3ee42aa80ec5efaa6"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "AF · SpO₂ · O₂ · syst. RR · HF · Bewusstsein · Temperatur",
+                "locale": "de",
+                "template": "documented-authored-31e6732a3546beeb7f4a"
+              },
+              "value": {
+                "text": "0 · 0 · 2 · 0 · 0 · 0 · 0",
+                "locale": "de",
+                "template": "documented-authored-b4c230fc98ce91140082",
+                "sourceNumbers": [
+                  0,
+                  0,
+                  2,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Niedriges klinisches Risiko: pflegerische Beurteilung",
+            "locale": "de",
+            "template": "documented-authored-2ce0684de3c4a79631b3"
+          },
+          "note": {
+            "text": "SpO₂-Skala 2: nur bei bestätigtem hyperkapnischem Atemversagen verwenden, mit verordnetem Ziel von 88 bis 92 %.",
+            "locale": "de",
+            "template": "documented-authored-f8aba073bff379373c5e"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Escala 2, SpO₂ 97% com O₂: 3 pontos na saturação",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Überwachung der Vitalzeichen",
+                "locale": "de",
+                "template": "documented-authored-02dfee141d1437c9f319"
+              },
+              "value": {
+                "text": "mindestens alle 1 Stunde",
+                "locale": "de",
+                "template": "documented-authored-c7f985dd0802b01b1762"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "AF · SpO₂ · O₂ · syst. RR · HF · Bewusstsein · Temperatur",
+                "locale": "de",
+                "template": "documented-authored-31e6732a3546beeb7f4a"
+              },
+              "value": {
+                "text": "0 · 3 · 2 · 0 · 0 · 0 · 0",
+                "locale": "de",
+                "template": "documented-authored-b4c230fc98ce91140082",
+                "sourceNumbers": [
+                  0,
+                  3,
+                  2,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Mittleres klinisches Risiko: dringliche ärztliche Beurteilung",
+            "locale": "de",
+            "template": "documented-authored-a3b8871e8479ed1641ff"
+          },
+          "note": {
+            "text": "SpO₂-Skala 2: nur bei bestätigtem hyperkapnischem Atemversagen verwenden, mit verordnetem Ziel von 88 bis 92 %.",
+            "locale": "de",
+            "template": "documented-authored-f8aba073bff379373c5e"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Sinais vitais normais: 0",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Monitoraggio dei segni vitali",
+                "locale": "it",
+                "template": "documented-authored-02dfee141d1437c9f319"
+              },
+              "value": {
+                "text": "almeno ogni 12 ore",
+                "locale": "it",
+                "template": "documented-authored-264e47d2b753d52ccc59"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "FR · SpO₂ · O₂ · PAS · FC · coscienza · temperatura",
+                "locale": "it",
+                "template": "documented-authored-31e6732a3546beeb7f4a"
+              },
+              "value": {
+                "text": "0 · 0 · 0 · 0 · 0 · 0 · 0",
+                "locale": "it",
+                "template": "documented-authored-b4c230fc98ce91140082",
+                "sourceNumbers": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Rischio clinico basso",
+            "locale": "it",
+            "template": "documented-authored-31b383f46a28ec955797"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Confusão nova isolada: 3 pontos em um parâmetro",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Monitoraggio dei segni vitali",
+                "locale": "it",
+                "template": "documented-authored-02dfee141d1437c9f319"
+              },
+              "value": {
+                "text": "almeno ogni 1 ora",
+                "locale": "it",
+                "template": "documented-authored-c7f985dd0802b01b1762"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "FR · SpO₂ · O₂ · PAS · FC · coscienza · temperatura",
+                "locale": "it",
+                "template": "documented-authored-31e6732a3546beeb7f4a"
+              },
+              "value": {
+                "text": "0 · 0 · 0 · 0 · 0 · 3 · 0",
+                "locale": "it",
+                "template": "documented-authored-b4c230fc98ce91140082",
+                "sourceNumbers": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  3,
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Rischio basso-medio: un parametro isolato con 3 punti richiede una valutazione medica urgente",
+            "locale": "it",
+            "template": "documented-authored-b7a56cc0814f1b926b12"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "FR 22 (2), SpO₂ 95 (1), PAS 105 (1), FC 95 (1), T 38,3 (1): 6",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Monitoraggio dei segni vitali",
+                "locale": "it",
+                "template": "documented-authored-02dfee141d1437c9f319"
+              },
+              "value": {
+                "text": "almeno ogni 1 ora",
+                "locale": "it",
+                "template": "documented-authored-c7f985dd0802b01b1762"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "FR · SpO₂ · O₂ · PAS · FC · coscienza · temperatura",
+                "locale": "it",
+                "template": "documented-authored-31e6732a3546beeb7f4a"
+              },
+              "value": {
+                "text": "2 · 1 · 0 · 1 · 1 · 0 · 1",
+                "locale": "it",
+                "template": "documented-authored-b4c230fc98ce91140082",
+                "sourceNumbers": [
+                  2,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Rischio clinico medio: valutazione medica urgente",
+            "locale": "it",
+            "template": "documented-authored-a3b8871e8479ed1641ff"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Choque séptico com O₂: 3+3+2+3+2+3+2 = 18",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Monitoraggio dei segni vitali",
+                "locale": "it",
+                "template": "documented-authored-02dfee141d1437c9f319"
+              },
+              "value": {
+                "text": "continua",
+                "locale": "it",
+                "template": "documented-authored-2150c6ff8cdb3ed6a13d"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "FR · SpO₂ · O₂ · PAS · FC · coscienza · temperatura",
+                "locale": "it",
+                "template": "documented-authored-31e6732a3546beeb7f4a"
+              },
+              "value": {
+                "text": "3 · 3 · 2 · 3 · 2 · 3 · 2",
+                "locale": "it",
+                "template": "documented-authored-b4c230fc98ce91140082",
+                "sourceNumbers": [
+                  3,
+                  3,
+                  2,
+                  3,
+                  2,
+                  3,
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Rischio clinico alto: risposta d’emergenza da parte del team di terapia intensiva",
+            "locale": "it",
+            "template": "documented-authored-bd623d4b93cc9a9e10bf"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "DPOC, escala 2, SpO₂ 90% com O₂: só o oxigênio pontua (2)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Monitoraggio dei segni vitali",
+                "locale": "it",
+                "template": "documented-authored-02dfee141d1437c9f319"
+              },
+              "value": {
+                "text": "almeno ogni 4 o 6 ore",
+                "locale": "it",
+                "template": "documented-authored-43d3ee42aa80ec5efaa6"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "FR · SpO₂ · O₂ · PAS · FC · coscienza · temperatura",
+                "locale": "it",
+                "template": "documented-authored-31e6732a3546beeb7f4a"
+              },
+              "value": {
+                "text": "0 · 0 · 2 · 0 · 0 · 0 · 0",
+                "locale": "it",
+                "template": "documented-authored-b4c230fc98ce91140082",
+                "sourceNumbers": [
+                  0,
+                  0,
+                  2,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Rischio clinico basso: valutazione infermieristica",
+            "locale": "it",
+            "template": "documented-authored-2ce0684de3c4a79631b3"
+          },
+          "note": {
+            "text": "Scala 2 di SpO₂: usare solo in insufficienza respiratoria ipercapnica confermata, con target prescritto 88-92%.",
+            "locale": "it",
+            "template": "documented-authored-f8aba073bff379373c5e"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Escala 2, SpO₂ 97% com O₂: 3 pontos na saturação",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Monitoraggio dei segni vitali",
+                "locale": "it",
+                "template": "documented-authored-02dfee141d1437c9f319"
+              },
+              "value": {
+                "text": "almeno ogni 1 ora",
+                "locale": "it",
+                "template": "documented-authored-c7f985dd0802b01b1762"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "FR · SpO₂ · O₂ · PAS · FC · coscienza · temperatura",
+                "locale": "it",
+                "template": "documented-authored-31e6732a3546beeb7f4a"
+              },
+              "value": {
+                "text": "0 · 3 · 2 · 0 · 0 · 0 · 0",
+                "locale": "it",
+                "template": "documented-authored-b4c230fc98ce91140082",
+                "sourceNumbers": [
+                  0,
+                  3,
+                  2,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Rischio clinico medio: valutazione medica urgente",
+            "locale": "it",
+            "template": "documented-authored-a3b8871e8479ed1641ff"
+          },
+          "note": {
+            "text": "Scala 2 di SpO₂: usare solo in insufficienza respiratoria ipercapnica confermata, con target prescritto 88-92%.",
+            "locale": "it",
+            "template": "documented-authored-f8aba073bff379373c5e"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Sinais vitais normais: 0",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "مراقبة العلامات الحيوية",
+                "locale": "ar",
+                "template": "documented-authored-02dfee141d1437c9f319"
+              },
+              "value": {
+                "text": "على الأقل كل 12 ساعة",
+                "locale": "ar",
+                "template": "documented-authored-264e47d2b753d52ccc59"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "معدل التنفس · SpO₂ · O₂ · الضغط الانقباضي · معدل القلب · الوعي · درجة الحرارة",
+                "locale": "ar",
+                "template": "documented-authored-31e6732a3546beeb7f4a"
+              },
+              "value": {
+                "text": "٠ · ٠ · ٠ · ٠ · ٠ · ٠ · ٠",
+                "locale": "ar",
+                "template": "documented-authored-b4c230fc98ce91140082",
+                "sourceNumbers": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "مخاطر سريرية منخفضة",
+            "locale": "ar",
+            "template": "documented-authored-31b383f46a28ec955797"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Confusão nova isolada: 3 pontos em um parâmetro",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "مراقبة العلامات الحيوية",
+                "locale": "ar",
+                "template": "documented-authored-02dfee141d1437c9f319"
+              },
+              "value": {
+                "text": "على الأقل كل 1 ساعة",
+                "locale": "ar",
+                "template": "documented-authored-c7f985dd0802b01b1762"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "معدل التنفس · SpO₂ · O₂ · الضغط الانقباضي · معدل القلب · الوعي · درجة الحرارة",
+                "locale": "ar",
+                "template": "documented-authored-31e6732a3546beeb7f4a"
+              },
+              "value": {
+                "text": "٠ · ٠ · ٠ · ٠ · ٠ · ٣ · ٠",
+                "locale": "ar",
+                "template": "documented-authored-b4c230fc98ce91140082",
+                "sourceNumbers": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  3,
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "مخاطر منخفضة-متوسطة: وجود معيار واحد معزول بدرجة 3 يستدعي تقييمًا طبيًا عاجلًا",
+            "locale": "ar",
+            "template": "documented-authored-b7a56cc0814f1b926b12"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "FR 22 (2), SpO₂ 95 (1), PAS 105 (1), FC 95 (1), T 38,3 (1): 6",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "مراقبة العلامات الحيوية",
+                "locale": "ar",
+                "template": "documented-authored-02dfee141d1437c9f319"
+              },
+              "value": {
+                "text": "على الأقل كل 1 ساعة",
+                "locale": "ar",
+                "template": "documented-authored-c7f985dd0802b01b1762"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "معدل التنفس · SpO₂ · O₂ · الضغط الانقباضي · معدل القلب · الوعي · درجة الحرارة",
+                "locale": "ar",
+                "template": "documented-authored-31e6732a3546beeb7f4a"
+              },
+              "value": {
+                "text": "٢ · ١ · ٠ · ١ · ١ · ٠ · ١",
+                "locale": "ar",
+                "template": "documented-authored-b4c230fc98ce91140082",
+                "sourceNumbers": [
+                  2,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "خطر سريري متوسط: تقييم طبي عاجل",
+            "locale": "ar",
+            "template": "documented-authored-a3b8871e8479ed1641ff"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Choque séptico com O₂: 3+3+2+3+2+3+2 = 18",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "مراقبة العلامات الحيوية",
+                "locale": "ar",
+                "template": "documented-authored-02dfee141d1437c9f319"
+              },
+              "value": {
+                "text": "مستمرة",
+                "locale": "ar",
+                "template": "documented-authored-2150c6ff8cdb3ed6a13d"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "معدل التنفس · SpO₂ · O₂ · الضغط الانقباضي · معدل القلب · الوعي · درجة الحرارة",
+                "locale": "ar",
+                "template": "documented-authored-31e6732a3546beeb7f4a"
+              },
+              "value": {
+                "text": "٣ · ٣ · ٢ · ٣ · ٢ · ٣ · ٢",
+                "locale": "ar",
+                "template": "documented-authored-b4c230fc98ce91140082",
+                "sourceNumbers": [
+                  3,
+                  3,
+                  2,
+                  3,
+                  2,
+                  3,
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "خطر سريري مرتفع: استجابة طارئة من فريق الرعاية الحرجة",
+            "locale": "ar",
+            "template": "documented-authored-bd623d4b93cc9a9e10bf"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "DPOC, escala 2, SpO₂ 90% com O₂: só o oxigênio pontua (2)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "مراقبة العلامات الحيوية",
+                "locale": "ar",
+                "template": "documented-authored-02dfee141d1437c9f319"
+              },
+              "value": {
+                "text": "على الأقل كل 4 إلى 6 ساعات",
+                "locale": "ar",
+                "template": "documented-authored-43d3ee42aa80ec5efaa6"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "معدل التنفس · SpO₂ · O₂ · الضغط الانقباضي · معدل القلب · الوعي · درجة الحرارة",
+                "locale": "ar",
+                "template": "documented-authored-31e6732a3546beeb7f4a"
+              },
+              "value": {
+                "text": "٠ · ٠ · ٢ · ٠ · ٠ · ٠ · ٠",
+                "locale": "ar",
+                "template": "documented-authored-b4c230fc98ce91140082",
+                "sourceNumbers": [
+                  0,
+                  0,
+                  2,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "خطر سريري منخفض: تقييم تمريضي",
+            "locale": "ar",
+            "template": "documented-authored-2ce0684de3c4a79631b3"
+          },
+          "note": {
+            "text": "مقياس SpO₂ 2: استخدمه فقط في حالات الفشل التنفسي مفرط ثاني أكسيد الكربون المؤكد، مع هدف موصوف 88 إلى 92%.",
+            "locale": "ar",
+            "template": "documented-authored-f8aba073bff379373c5e"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Escala 2, SpO₂ 97% com O₂: 3 pontos na saturação",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "مراقبة العلامات الحيوية",
+                "locale": "ar",
+                "template": "documented-authored-02dfee141d1437c9f319"
+              },
+              "value": {
+                "text": "على الأقل كل 1 ساعة",
+                "locale": "ar",
+                "template": "documented-authored-c7f985dd0802b01b1762"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "معدل التنفس · SpO₂ · O₂ · الضغط الانقباضي · معدل القلب · الوعي · درجة الحرارة",
+                "locale": "ar",
+                "template": "documented-authored-31e6732a3546beeb7f4a"
+              },
+              "value": {
+                "text": "٠ · ٣ · ٢ · ٠ · ٠ · ٠ · ٠",
+                "locale": "ar",
+                "template": "documented-authored-b4c230fc98ce91140082",
+                "sourceNumbers": [
+                  0,
+                  3,
+                  2,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "خطر سريري متوسط: تقييم طبي عاجل",
+            "locale": "ar",
+            "template": "documented-authored-a3b8871e8479ed1641ff"
+          },
+          "note": {
+            "text": "مقياس SpO₂ 2: استخدمه فقط في حالات الفشل التنفسي مفرط ثاني أكسيد الكربون المؤكد، مع هدف موصوف 88 إلى 92%.",
+            "locale": "ar",
+            "template": "documented-authored-f8aba073bff379373c5e"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Sinais vitais normais: 0",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "生命体征监测",
+                "locale": "zh",
+                "template": "documented-authored-02dfee141d1437c9f319"
+              },
+              "value": {
+                "text": "至少每 12 小时一次",
+                "locale": "zh",
+                "template": "documented-authored-264e47d2b753d52ccc59"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "呼吸频率 · SpO₂ · O₂ · 收缩压 · 心率 · 意识 · 体温",
+                "locale": "zh",
+                "template": "documented-authored-31e6732a3546beeb7f4a"
+              },
+              "value": {
+                "text": "0 · 0 · 0 · 0 · 0 · 0 · 0",
+                "locale": "zh",
+                "template": "documented-authored-b4c230fc98ce91140082",
+                "sourceNumbers": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "临床风险低",
+            "locale": "zh",
+            "template": "documented-authored-31b383f46a28ec955797"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Confusão nova isolada: 3 pontos em um parâmetro",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "生命体征监测",
+                "locale": "zh",
+                "template": "documented-authored-02dfee141d1437c9f319"
+              },
+              "value": {
+                "text": "至少每1小时",
+                "locale": "zh",
+                "template": "documented-authored-c7f985dd0802b01b1762"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "呼吸频率 · SpO₂ · O₂ · 收缩压 · 心率 · 意识 · 体温",
+                "locale": "zh",
+                "template": "documented-authored-31e6732a3546beeb7f4a"
+              },
+              "value": {
+                "text": "0 · 0 · 0 · 0 · 0 · 3 · 0",
+                "locale": "zh",
+                "template": "documented-authored-b4c230fc98ce91140082",
+                "sourceNumbers": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  3,
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "低至中等风险：单个参数得 3 分需要紧急医学评估",
+            "locale": "zh",
+            "template": "documented-authored-b7a56cc0814f1b926b12"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "FR 22 (2), SpO₂ 95 (1), PAS 105 (1), FC 95 (1), T 38,3 (1): 6",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "生命体征监测",
+                "locale": "zh",
+                "template": "documented-authored-02dfee141d1437c9f319"
+              },
+              "value": {
+                "text": "至少每1小时",
+                "locale": "zh",
+                "template": "documented-authored-c7f985dd0802b01b1762"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "呼吸频率 · SpO₂ · O₂ · 收缩压 · 心率 · 意识 · 体温",
+                "locale": "zh",
+                "template": "documented-authored-31e6732a3546beeb7f4a"
+              },
+              "value": {
+                "text": "2 · 1 · 0 · 1 · 1 · 0 · 1",
+                "locale": "zh",
+                "template": "documented-authored-b4c230fc98ce91140082",
+                "sourceNumbers": [
+                  2,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "中等临床风险：紧急医学评估",
+            "locale": "zh",
+            "template": "documented-authored-a3b8871e8479ed1641ff"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Choque séptico com O₂: 3+3+2+3+2+3+2 = 18",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "生命体征监测",
+                "locale": "zh",
+                "template": "documented-authored-02dfee141d1437c9f319"
+              },
+              "value": {
+                "text": "连续",
+                "locale": "zh",
+                "template": "documented-authored-2150c6ff8cdb3ed6a13d"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "呼吸频率 · SpO₂ · O₂ · 收缩压 · 心率 · 意识 · 体温",
+                "locale": "zh",
+                "template": "documented-authored-31e6732a3546beeb7f4a"
+              },
+              "value": {
+                "text": "3 · 3 · 2 · 3 · 2 · 3 · 2",
+                "locale": "zh",
+                "template": "documented-authored-b4c230fc98ce91140082",
+                "sourceNumbers": [
+                  3,
+                  3,
+                  2,
+                  3,
+                  2,
+                  3,
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "高临床风险：重症监护团队紧急响应",
+            "locale": "zh",
+            "template": "documented-authored-bd623d4b93cc9a9e10bf"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "DPOC, escala 2, SpO₂ 90% com O₂: só o oxigênio pontua (2)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "生命体征监测",
+                "locale": "zh",
+                "template": "documented-authored-02dfee141d1437c9f319"
+              },
+              "value": {
+                "text": "至少每4至6小时",
+                "locale": "zh",
+                "template": "documented-authored-43d3ee42aa80ec5efaa6"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "呼吸频率 · SpO₂ · O₂ · 收缩压 · 心率 · 意识 · 体温",
+                "locale": "zh",
+                "template": "documented-authored-31e6732a3546beeb7f4a"
+              },
+              "value": {
+                "text": "0 · 0 · 2 · 0 · 0 · 0 · 0",
+                "locale": "zh",
+                "template": "documented-authored-b4c230fc98ce91140082",
+                "sourceNumbers": [
+                  0,
+                  0,
+                  2,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "低临床风险：护理评估",
+            "locale": "zh",
+            "template": "documented-authored-2ce0684de3c4a79631b3"
+          },
+          "note": {
+            "text": "SpO₂ 2级：仅用于经确认的高碳酸血症性呼吸衰竭，处方目标为88至92%。",
+            "locale": "zh",
+            "template": "documented-authored-f8aba073bff379373c5e"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Escala 2, SpO₂ 97% com O₂: 3 pontos na saturação",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "生命体征监测",
+                "locale": "zh",
+                "template": "documented-authored-02dfee141d1437c9f319"
+              },
+              "value": {
+                "text": "至少每1小时",
+                "locale": "zh",
+                "template": "documented-authored-c7f985dd0802b01b1762"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "呼吸频率 · SpO₂ · O₂ · 收缩压 · 心率 · 意识 · 体温",
+                "locale": "zh",
+                "template": "documented-authored-31e6732a3546beeb7f4a"
+              },
+              "value": {
+                "text": "0 · 3 · 2 · 0 · 0 · 0 · 0",
+                "locale": "zh",
+                "template": "documented-authored-b4c230fc98ce91140082",
+                "sourceNumbers": [
+                  0,
+                  3,
+                  2,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "中等临床风险：紧急医学评估",
+            "locale": "zh",
+            "template": "documented-authored-a3b8871e8479ed1641ff"
+          },
+          "note": {
+            "text": "SpO₂ 2级：仅用于经确认的高碳酸血症性呼吸衰竭，处方目标为88至92%。",
+            "locale": "zh",
+            "template": "documented-authored-f8aba073bff379373c5e"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Sinais vitais normais: 0",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "バイタルサインのモニタリング",
+                "locale": "ja",
+                "template": "documented-authored-02dfee141d1437c9f319"
+              },
+              "value": {
+                "text": "少なくとも12時間ごと",
+                "locale": "ja",
+                "template": "documented-authored-264e47d2b753d52ccc59"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "呼吸数 · SpO₂ · O₂ · 収縮期血圧 · 心拍数 · 意識 · 体温",
+                "locale": "ja",
+                "template": "documented-authored-31e6732a3546beeb7f4a"
+              },
+              "value": {
+                "text": "0 · 0 · 0 · 0 · 0 · 0 · 0",
+                "locale": "ja",
+                "template": "documented-authored-b4c230fc98ce91140082",
+                "sourceNumbers": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "臨床リスクが低い",
+            "locale": "ja",
+            "template": "documented-authored-31b383f46a28ec955797"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Confusão nova isolada: 3 pontos em um parâmetro",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "バイタルサインのモニタリング",
+                "locale": "ja",
+                "template": "documented-authored-02dfee141d1437c9f319"
+              },
+              "value": {
+                "text": "少なくとも1時間ごと",
+                "locale": "ja",
+                "template": "documented-authored-c7f985dd0802b01b1762"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "呼吸数 · SpO₂ · O₂ · 収縮期血圧 · 心拍数 · 意識 · 体温",
+                "locale": "ja",
+                "template": "documented-authored-31e6732a3546beeb7f4a"
+              },
+              "value": {
+                "text": "0 · 0 · 0 · 0 · 0 · 3 · 0",
+                "locale": "ja",
+                "template": "documented-authored-b4c230fc98ce91140082",
+                "sourceNumbers": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  3,
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "低～中等リスク：単独の1項目が3点の場合、緊急の医師評価が必要",
+            "locale": "ja",
+            "template": "documented-authored-b7a56cc0814f1b926b12"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "FR 22 (2), SpO₂ 95 (1), PAS 105 (1), FC 95 (1), T 38,3 (1): 6",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "バイタルサインのモニタリング",
+                "locale": "ja",
+                "template": "documented-authored-02dfee141d1437c9f319"
+              },
+              "value": {
+                "text": "少なくとも1時間ごと",
+                "locale": "ja",
+                "template": "documented-authored-c7f985dd0802b01b1762"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "呼吸数 · SpO₂ · O₂ · 収縮期血圧 · 心拍数 · 意識 · 体温",
+                "locale": "ja",
+                "template": "documented-authored-31e6732a3546beeb7f4a"
+              },
+              "value": {
+                "text": "2 · 1 · 0 · 1 · 1 · 0 · 1",
+                "locale": "ja",
+                "template": "documented-authored-b4c230fc98ce91140082",
+                "sourceNumbers": [
+                  2,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "中等度の臨床リスク：緊急の医師による評価",
+            "locale": "ja",
+            "template": "documented-authored-a3b8871e8479ed1641ff"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Choque séptico com O₂: 3+3+2+3+2+3+2 = 18",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "バイタルサインのモニタリング",
+                "locale": "ja",
+                "template": "documented-authored-02dfee141d1437c9f319"
+              },
+              "value": {
+                "text": "継続的",
+                "locale": "ja",
+                "template": "documented-authored-2150c6ff8cdb3ed6a13d"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "呼吸数 · SpO₂ · O₂ · 収縮期血圧 · 心拍数 · 意識 · 体温",
+                "locale": "ja",
+                "template": "documented-authored-31e6732a3546beeb7f4a"
+              },
+              "value": {
+                "text": "3 · 3 · 2 · 3 · 2 · 3 · 2",
+                "locale": "ja",
+                "template": "documented-authored-b4c230fc98ce91140082",
+                "sourceNumbers": [
+                  3,
+                  3,
+                  2,
+                  3,
+                  2,
+                  3,
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "高い臨床リスク：集中治療チームによる緊急対応",
+            "locale": "ja",
+            "template": "documented-authored-bd623d4b93cc9a9e10bf"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "DPOC, escala 2, SpO₂ 90% com O₂: só o oxigênio pontua (2)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "バイタルサインのモニタリング",
+                "locale": "ja",
+                "template": "documented-authored-02dfee141d1437c9f319"
+              },
+              "value": {
+                "text": "少なくとも4～6時間ごと",
+                "locale": "ja",
+                "template": "documented-authored-43d3ee42aa80ec5efaa6"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "呼吸数 · SpO₂ · O₂ · 収縮期血圧 · 心拍数 · 意識 · 体温",
+                "locale": "ja",
+                "template": "documented-authored-31e6732a3546beeb7f4a"
+              },
+              "value": {
+                "text": "0 · 0 · 2 · 0 · 0 · 0 · 0",
+                "locale": "ja",
+                "template": "documented-authored-b4c230fc98ce91140082",
+                "sourceNumbers": [
+                  0,
+                  0,
+                  2,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "低い臨床リスク：看護師による評価",
+            "locale": "ja",
+            "template": "documented-authored-2ce0684de3c4a79631b3"
+          },
+          "note": {
+            "text": "SpO₂スケール2：確認された高炭酸ガス血症性呼吸不全にのみ使用し、88～92%の目標を処方する。",
+            "locale": "ja",
+            "template": "documented-authored-f8aba073bff379373c5e"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Escala 2, SpO₂ 97% com O₂: 3 pontos na saturação",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "バイタルサインのモニタリング",
+                "locale": "ja",
+                "template": "documented-authored-02dfee141d1437c9f319"
+              },
+              "value": {
+                "text": "少なくとも1時間ごと",
+                "locale": "ja",
+                "template": "documented-authored-c7f985dd0802b01b1762"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "呼吸数 · SpO₂ · O₂ · 収縮期血圧 · 心拍数 · 意識 · 体温",
+                "locale": "ja",
+                "template": "documented-authored-31e6732a3546beeb7f4a"
+              },
+              "value": {
+                "text": "0 · 3 · 2 · 0 · 0 · 0 · 0",
+                "locale": "ja",
+                "template": "documented-authored-b4c230fc98ce91140082",
+                "sourceNumbers": [
+                  0,
+                  3,
+                  2,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "中等度の臨床リスク：緊急の医師による評価",
+            "locale": "ja",
+            "template": "documented-authored-a3b8871e8479ed1641ff"
+          },
+          "note": {
+            "text": "SpO₂スケール2：確認された高炭酸ガス血症性呼吸不全にのみ使用し、88～92%の目標を処方する。",
+            "locale": "ja",
+            "template": "documented-authored-f8aba073bff379373c5e"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Sinais vitais normais: 0",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "महत्वपूर्ण संकेतों की निगरानी",
+                "locale": "hi",
+                "template": "documented-authored-02dfee141d1437c9f319"
+              },
+              "value": {
+                "text": "कम से कम हर 12 घंटे में",
+                "locale": "hi",
+                "template": "documented-authored-264e47d2b753d52ccc59"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "श्वसन दर · SpO₂ · O₂ · सिस्टोलिक रक्तचाप · हृदय गति · चेतना · तापमान",
+                "locale": "hi",
+                "template": "documented-authored-31e6732a3546beeb7f4a"
+              },
+              "value": {
+                "text": "0 · 0 · 0 · 0 · 0 · 0 · 0",
+                "locale": "hi",
+                "template": "documented-authored-b4c230fc98ce91140082",
+                "sourceNumbers": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "निम्न नैदानिक जोखिम",
+            "locale": "hi",
+            "template": "documented-authored-31b383f46a28ec955797"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Confusão nova isolada: 3 pontos em um parâmetro",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "महत्वपूर्ण संकेतों की निगरानी",
+                "locale": "hi",
+                "template": "documented-authored-02dfee141d1437c9f319"
+              },
+              "value": {
+                "text": "कम से कम हर 1 घंटे",
+                "locale": "hi",
+                "template": "documented-authored-c7f985dd0802b01b1762"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "श्वसन दर · SpO₂ · O₂ · सिस्टोलिक रक्तचाप · हृदय गति · चेतना · तापमान",
+                "locale": "hi",
+                "template": "documented-authored-31e6732a3546beeb7f4a"
+              },
+              "value": {
+                "text": "0 · 0 · 0 · 0 · 0 · 3 · 0",
+                "locale": "hi",
+                "template": "documented-authored-b4c230fc98ce91140082",
+                "sourceNumbers": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  3,
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "निम्न-मध्यम जोखिम: 3 अंकों वाला एकल पैरामीटर त्वरित चिकित्सकीय मूल्यांकन की मांग करता है",
+            "locale": "hi",
+            "template": "documented-authored-b7a56cc0814f1b926b12"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "FR 22 (2), SpO₂ 95 (1), PAS 105 (1), FC 95 (1), T 38,3 (1): 6",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "महत्वपूर्ण संकेतों की निगरानी",
+                "locale": "hi",
+                "template": "documented-authored-02dfee141d1437c9f319"
+              },
+              "value": {
+                "text": "कम से कम हर 1 घंटे",
+                "locale": "hi",
+                "template": "documented-authored-c7f985dd0802b01b1762"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "श्वसन दर · SpO₂ · O₂ · सिस्टोलिक रक्तचाप · हृदय गति · चेतना · तापमान",
+                "locale": "hi",
+                "template": "documented-authored-31e6732a3546beeb7f4a"
+              },
+              "value": {
+                "text": "2 · 1 · 0 · 1 · 1 · 0 · 1",
+                "locale": "hi",
+                "template": "documented-authored-b4c230fc98ce91140082",
+                "sourceNumbers": [
+                  2,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "मध्यम नैदानिक जोखिम: तत्काल चिकित्सकीय मूल्यांकन",
+            "locale": "hi",
+            "template": "documented-authored-a3b8871e8479ed1641ff"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Choque séptico com O₂: 3+3+2+3+2+3+2 = 18",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "महत्वपूर्ण संकेतों की निगरानी",
+                "locale": "hi",
+                "template": "documented-authored-02dfee141d1437c9f319"
+              },
+              "value": {
+                "text": "निरंतर",
+                "locale": "hi",
+                "template": "documented-authored-2150c6ff8cdb3ed6a13d"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "श्वसन दर · SpO₂ · O₂ · सिस्टोलिक रक्तचाप · हृदय गति · चेतना · तापमान",
+                "locale": "hi",
+                "template": "documented-authored-31e6732a3546beeb7f4a"
+              },
+              "value": {
+                "text": "3 · 3 · 2 · 3 · 2 · 3 · 2",
+                "locale": "hi",
+                "template": "documented-authored-b4c230fc98ce91140082",
+                "sourceNumbers": [
+                  3,
+                  3,
+                  2,
+                  3,
+                  2,
+                  3,
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "उच्च नैदानिक जोखिम: क्रिटिकल केयर टीम द्वारा आपातकालीन प्रतिक्रिया",
+            "locale": "hi",
+            "template": "documented-authored-bd623d4b93cc9a9e10bf"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "DPOC, escala 2, SpO₂ 90% com O₂: só o oxigênio pontua (2)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "महत्वपूर्ण संकेतों की निगरानी",
+                "locale": "hi",
+                "template": "documented-authored-02dfee141d1437c9f319"
+              },
+              "value": {
+                "text": "कम से कम हर 4 से 6 घंटे",
+                "locale": "hi",
+                "template": "documented-authored-43d3ee42aa80ec5efaa6"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "श्वसन दर · SpO₂ · O₂ · सिस्टोलिक रक्तचाप · हृदय गति · चेतना · तापमान",
+                "locale": "hi",
+                "template": "documented-authored-31e6732a3546beeb7f4a"
+              },
+              "value": {
+                "text": "0 · 0 · 2 · 0 · 0 · 0 · 0",
+                "locale": "hi",
+                "template": "documented-authored-b4c230fc98ce91140082",
+                "sourceNumbers": [
+                  0,
+                  0,
+                  2,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "कम नैदानिक जोखिम: नर्सिंग मूल्यांकन",
+            "locale": "hi",
+            "template": "documented-authored-2ce0684de3c4a79631b3"
+          },
+          "note": {
+            "text": "SpO₂ स्केल 2: केवल पुष्टि की गई हाइपरकैपनिक श्वसन विफलता में उपयोग करें, निर्धारित लक्ष्य 88 से 92% के साथ।",
+            "locale": "hi",
+            "template": "documented-authored-f8aba073bff379373c5e"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Escala 2, SpO₂ 97% com O₂: 3 pontos na saturação",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "महत्वपूर्ण संकेतों की निगरानी",
+                "locale": "hi",
+                "template": "documented-authored-02dfee141d1437c9f319"
+              },
+              "value": {
+                "text": "कम से कम हर 1 घंटे",
+                "locale": "hi",
+                "template": "documented-authored-c7f985dd0802b01b1762"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "श्वसन दर · SpO₂ · O₂ · सिस्टोलिक रक्तचाप · हृदय गति · चेतना · तापमान",
+                "locale": "hi",
+                "template": "documented-authored-31e6732a3546beeb7f4a"
+              },
+              "value": {
+                "text": "0 · 3 · 2 · 0 · 0 · 0 · 0",
+                "locale": "hi",
+                "template": "documented-authored-b4c230fc98ce91140082",
+                "sourceNumbers": [
+                  0,
+                  3,
+                  2,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "मध्यम नैदानिक जोखिम: तत्काल चिकित्सकीय मूल्यांकन",
+            "locale": "hi",
+            "template": "documented-authored-a3b8871e8479ed1641ff"
+          },
+          "note": {
+            "text": "SpO₂ स्केल 2: केवल पुष्टि की गई हाइपरकैपनिक श्वसन विफलता में उपयोग करें, निर्धारित लक्ष्य 88 से 92% के साथ।",
+            "locale": "hi",
+            "template": "documented-authored-f8aba073bff379373c5e"
+          },
+          "level": "mid"
+        }
+      }
+    ]
+  }
+}
